@@ -2,7 +2,7 @@
 	function dump(&$var, $autohide = TRUE, $collaspe = TRUE) {
 		$format = array('N'=>"\n", 'T'=>"\t", 'BR'=>"<br />", 'BRN'=>"<br />\n");
 		$css  = ".content-wrapper {font-family:Verdana, Arial; font-size:12px; width: 100%; list-style:none; margin:0; padding:0; outline:0; text-decoration:none; box-sizing:border-box!important; -webkit-box-sizing:border-box!important;-moz-box-sizing:border-box!important;-ms-box-sizing:border-box!important}";
-		$css .= ".dumpnotify{font-family:Verdana; -webkit-border-radius:5px; -moz-border-radius:3px; border-radius:3px; border:1px solid #000; width:97%; margin:15px; display: block; position: static;}";
+		$css .= ".dumpnotify{font-family:Verdana; font-size:12px; -webkit-border-radius:5px; -moz-border-radius:3px; border-radius:3px; border:1px solid #000; width:97%; margin:15px; display: block; position: static;}";
 		$css .= "div.dumpnotify .content-wrapper, div.dumpnotify .header-wrapper{font-family:Verdana; -moz-box-shadow:inset 0 2px 0 -1px rgba(255,255,255,.2); -webkit-box-shadow:inset 0 2px 0 -1px rgba(255,255,255,.2); box-shadow:inset 0 2px 0 -1px rgba(255,255,255,.2)}";
 		$css .= "div.dumpnotify .header-wrapper{font-family:Verdana; width:100%; display:table; border-bottom:1px solid #000; background:#464646; background:-moz-linear-gradient(top,#464646 0,#3f3f3f 50%,#3f3f3f 51%,#3d3d3d 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#464646),color-stop(50%,#3f3f3f),color-stop(51%,#3f3f3f),color-stop(100%,#3d3d3d));background:-webkit-linear-gradient(top,#464646 0,#3f3f3f 50%,#3f3f3f 51%,#3d3d3d 100%);background:-o-linear-gradient(top,#464646 0,#3f3f3f 50%,#3f3f3f 51%,#3d3d3d 100%);background:-ms-linear-gradient(top,#464646 0,#3f3f3f 50%,#3f3f3f 51%,#3d3d3d 100%);background:linear-gradient(to bottom,#464646 0,#3f3f3f 50%,#3f3f3f 51%,#3d3d3d 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#464646', endColorstr='#3d3d3d', GradientType=0 )}";
 		$css .= "div.dumpnotify .header-wrapper .title{font-family:Verdana; padding: 8px; font-size:18px; font-weight:100;color:#e6e6e6;float:left}div.notify .header-wrapper .notifications{font-family:verdana;font-size:13px;padding-left:30px;padding-top:2px;padding-bottom:2px;color:#e6e6e6;float:right}";
@@ -12,17 +12,17 @@
 		$css .= ".toggle-box+label+div{display:none;margin-bottom:10px}.toggle-box+label::after{color:#FFF;font-weight:700;font-size: 12px;content:'...}'}";
 		$css .= ".toggle-box:checked+label+div{display:block;-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-ms-animation:fadein 2s;-o-animation:fadein 2s;animation:fadein 2s}";
 		$css .= ".toggle-box+label:before{background-color:#4F5150;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;color:#FFF;content:\"+\";display:inline-block;font-weight:700;height:15px;line-height:15px;margin-right:5px;text-align:center;width:15px}";
-		$css .= ".toggle-box:checked+label:before{content:\"-\"}.toggle-box:checked+label:after{content:\"    \"}.maindiv{display:block;background:#000;color:#FFF;font-family:Verdana;font-size:10px;line-height:13px;padding:5px 5px 5px 20px}";
-		$css .= ".version{color:#FFF;font-family:Verdana;font-size:8px;line-height:10px;margin:0 0 10px;padding:5px}";
+		$css .= ".toggle-box:checked+label:before{content:\"-\"}.toggle-box:checked+label:after{content:\"    \"}.maindiv{display:block; background:#000; color:#FFF; font-family:Verdana; font-size:14px; line-height:13px; padding:5px 5px 5px 20px}";
+		$css .= ".version{color:#FFF;font-family:Verdana;font-size:12px; line-height:10px;margin:0 0 10px;padding:5px}";
 		$css .= "@keyframes fadein{from{opacity:0}to{opacity:1}}@-moz-keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@-ms-keyframes fadein{from{opacity:0}to{opacity:1}}@-o-keyframes fadein{from{opacity:0}to{opacity:1}}";
 		$css .= ".dumpicon{font-family:Verdana; display: block;z-index:999999;position:static;}";
 
 		if ($autohide) {
-			$css .= ".diagdumpbox {font-family:Verdana; text-align: left; position: fixed; top: 5px; left: 5px; width: 32px; height: 32px; z-index: 999999;}.diagdumpbutton {cursor: pointer;transition: all 0.3s ease-out;}";
-			$css .= ".diagdumpoverlay {font-family:Verdana; position: absolute; z-index: 9999; top: 0; bottom: 0; left: 0; right: 0; transition: opacity 500ms; visibility: hidden; opacity: 0; width: 100%} .diagdumpoverlay:target {visibility: visible;opacity: 1;}";
-			$css .= ".diagdumppopup {font-family:Verdana; margin: 70px auto; padding: 20px; background: #fff; border-radius: 5px; width: 50%; position: relative; transition: all 5s ease-in-out; -webkit-box-shadow: 0px 0px 12px 6px #444; -moz-box-shadow: 0px 0px 12px 6px #444; box-shadow: 0px 0px 12px 6px #444;}";
-			$css .= ".diagdumppopup h2 {font-family:Verdana; margin-top: 0;color: #333;font-family: Tahoma, Arial, sans-serif;}.diagdumppopup .close {position: absolute;top: 15px;right: 15px;transition: all 200ms;font-size: 25px;font-weight: bold;text-decoration: none;color: #333;background: #FFF;border: 1px solid black;border-radius: 25px;height: 27px;width: 27px;text-align: center;}.diagdumppopup .close:hover {color: #773d3d;}";
-			$css .= ".diagdumppopup .content {font-family:Verdana; max-height: 30%;overflow: auto;}@media screen and (max-width: 700px){.diagdumpbox{width: 70%;}.diagdumppopup{width: 70%;}}";
+			$css .= ".diagdumpbox {font-family:Verdana; font-size:12px; text-align: left; position: fixed; top: 5px; left: 5px; width: 32px; height: 32px; z-index: 999999;}.diagdumpbutton {cursor: pointer;transition: all 0.3s ease-out;}";
+			$css .= ".diagdumpoverlay {font-family:Verdana; font-size:12px; position: absolute; z-index: 9999; top: 0; bottom: 0; left: 0; right: 0; transition: opacity 500ms; visibility: hidden; opacity: 0; width: 100%} .diagdumpoverlay:target {visibility: visible;opacity: 1;}";
+			$css .= ".diagdumppopup {font-family:Verdana; font-size:12px; margin: 70px auto; padding: 20px; background: #fff; border-radius: 5px; width: 50%; position: relative; transition: all 5s ease-in-out; -webkit-box-shadow: 0px 0px 12px 6px #444; -moz-box-shadow: 0px 0px 12px 6px #444; box-shadow: 0px 0px 12px 6px #444;}";
+			$css .= ".diagdumppopup h2 {font-family:Verdana; font-size:12px; margin-top: 0;color: #333;font-family: Tahoma, Arial, sans-serif;}.diagdumppopup .close {position: absolute;top: 15px;right: 15px;transition: all 200ms;font-size: 25px;font-weight: bold;text-decoration: none;color: #333;background: #FFF;border: 1px solid black;border-radius: 25px;height: 27px;width: 27px;text-align: center;}.diagdumppopup .close:hover {color: #773d3d;}";
+			$css .= ".diagdumppopup .content {font-family:Verdana; font-size:12px; max-height: 30%;overflow: auto;}@media screen and (max-width: 700px){.diagdumpbox{width: 70%;}.diagdumppopup{width: 70%;}}";
 		}
 
 		$output = $format['T'].'<style type="text/css">'.$format['N'].$css.$format['N'].$format['T'].'</style>'.$format['N'];
@@ -88,7 +88,7 @@
 			$real_var = &$var[$keyvar];
 			$real_name = &$var[$keyname];
 			$type = ucfirst(gettype($real_var));
-			$output = $format['T'].$format['T'].$format['T']."$indent$var_name <span style='color:#a2a2a2; font-size: 9px;'>$type</span> = <span style='color:#e87800;'>&$real_name</span>".$format['N'];
+			$output = $format['T'].$format['T'].$format['T']."$indent$var_name <span style='color:#a2a2a2; font-size: 12px;'>$type</span> = <span style='color:#e87800;'>&$real_name</span>".$format['N'];
 		} else {
 			$var = array($keyvar => $var, $keyname => $reference);
 			$avar = &$var[$keyvar];
@@ -124,7 +124,7 @@
 				$output .= '</div>'.$format['N'];
 			}
 			elseif(is_object($avar)) {
-				$output = $format['T'].$format['T'].$format['T']."$indent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name <span style='color:#a2a2a2; font-size: 9px;'>$type</span>".$format['N'].$format['T'].$format['T'].$format['T']."$indent(".$format['N'];
+				$output = $format['T'].$format['T'].$format['T']."$indent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name <span style='color:#a2a2a2; font-size: 12px;'>$type</span>".$format['N'].$format['T'].$format['T'].$format['T']."$indent(".$format['N'];
 				$divpad = $divpad + 20;
 				foreach($avar as $name=>$value) {
 					$output .= do_dump($value, "$name", $indent, $divpad, $reference, $collaspe);
@@ -132,22 +132,22 @@
 				$output .= "$indent)".$format['N'];
 			}
 			elseif(is_int($avar)) {
-				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 9px;'>$type(".strlen($avar).")</span> $type_color$avar</span>".$format['BRN'];
+				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 12px;'>$type(".strlen($avar).")</span> $type_color$avar</span>".$format['BRN'];
 			}
 			elseif(is_string($avar)) {
-				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 9px;'>$type(".strlen($avar).")</span> $type_color\"$avar\"</span>".$format['BRN'];
+				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 12px;'>$type(".strlen($avar).")</span> $type_color\"$avar\"</span>".$format['BRN'];
 			}
 			elseif(is_float($avar)) {
-				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 9px;'>$type(".strlen($avar).")</span> $type_color$avar</span>".$format['BRN'];
+				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 12px;'>$type(".strlen($avar).")</span> $type_color$avar</span>".$format['BRN'];
 			}
 			elseif(is_bool($avar)) {
-				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 9px;'>$type(".strlen($avar).")</span> $type_color".($avar == 1 ? "TRUE":"FALSE")."</span>".$format['BRN'];
+				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 12px;'>$type(".strlen($avar).")</span> $type_color".($avar == 1 ? "TRUE":"FALSE")."</span>".$format['BRN'];
 			}
 			elseif(is_null($avar)) {
-				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 9px;'>$type(".strlen($avar).")</span> {$type_color}NULL</span>".$format['BRN'];
+				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 12px;'>$type(".strlen($avar).")</span> {$type_color}NULL</span>".$format['BRN'];
 			}
 			else {
-				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 9px;'>$type(".strlen($avar).")</span> $avar".$format['BRN'];
+				$output = $format['T'].$format['T'].$format['T'].$indent."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$var_name = <span style='color:#a2a2a2; font-size: 12px;'>$type(".strlen($avar).")</span> $avar".$format['BRN'];
 			}
 			$var = $var[$keyvar];
 		}

@@ -29,7 +29,9 @@
     }
 
     # Test server for resources needed to operate
+
     # Check for any new updates
+		# Future
 
     # Test etc folder for any modules, plugins and components that was added
 	$dirs = array_filter(glob(ETCDIR.DS.'*'), 'is_dir');
