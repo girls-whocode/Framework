@@ -29,7 +29,7 @@
 		$size = (function_exists('mb_strlen') ? mb_strlen(serialize($var), '8bit') : strlen(serialize($var)));
 		$arrayCount = number_format(count($var, COUNT_RECURSIVE));
 		$scope = false;
-		$dumpver = "2.3.1";
+		$dumpver = "2.3.2";
 		$prefix = 'unique';
 		$suffix = 'value';
 		$vals = ($scope ? $scope : $GLOBALS);
@@ -66,7 +66,7 @@
 		$info .= 'File\'s Last Modified: <strong>'.date("M d Y H:i:s", getlastmod()).'</strong>'.$format['BRN'];
 		$info .= '</div>';
 		$info .= '<div>';
-		$info .= '<span class="number">'.$arrayCount.'</span>';
+		# $info .= '<span class="number">'.$arrayCount.'</span>';
 		$info .= '</div>';
 		$info .= '</div>';
 		$output .= $format['T']."".$info."".$format['N'];
