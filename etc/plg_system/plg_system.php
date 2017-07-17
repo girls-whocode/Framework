@@ -136,23 +136,12 @@ function getDistanceBetweenPoints($latitude1, $longitude1, $latitude2, $longitud
 	$meters = $kilometers * 1000;
 	return compact('miles','feet','yards','kilometers','meters');
 }
-function getAddressFromPoints($latitude, $longitude) {
-	$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&sensor=false";
-	$data = @file_get_contents($url);
-	$jsondata = json_decode($data,true);
-	if (!check_status($jsondata)) return array();
-
-	$address = array(
-		'country' => google_getCountry($jsondata),
-		'province' => google_getProvince($jsondata),
-		'city' => google_getCity($jsondata),
-		'street' => google_getStreet($jsondata),
-		'postal_code' => google_getPostalCode($jsondata),
-		'country_code' => google_getCountryCode($jsondata),
-		'formatted_address' => google_getAddress($jsondata),
-	);
-
-	return $address;
+function getAddressFromPoints($latitude, $longitude)   {
+	$url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='.trim($latitude).','.trim($longitude).'&sensor=false';
+	$json = @file_get_contents($url);
+	$data=json_decode($json);
+	$status = $data->status;
+	return ($status=="OK" ? $data->results[0]->formatted_address : false);
 }
 
 # DATE FUNCTIONS
