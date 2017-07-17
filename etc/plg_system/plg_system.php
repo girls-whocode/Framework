@@ -73,7 +73,6 @@ The rights granted under, and the subject matter referenced, in this License wer
 function clean_number($string) {
 	return preg_replace("/[^0-9.,]+/", "", $string);
 }
-
 function decimal_to_fraction($float) {
 	$float = clean_number($float);
 	$whole = floor($float);
@@ -91,7 +90,6 @@ function decimal_to_fraction($float) {
 	}
 	return ($whole == 0 ? '' : $whole) . " " . ($roundedDecimal * $denom) . "/" . $denom;
 }
-
 function fraction_to_decimal ($fraction) {
 	$wholenum = array_map('trim',explode(" ", $fraction));
 	if (count($wholenum) == 1) $wholenum = ''; else $wholenum = $wholenum[0];
@@ -107,40 +105,15 @@ function fraction_to_decimal ($fraction) {
 	$return = ($wholenum != '' ? $wholenum : '0').'.'.$cleaned[1];
 	return $return;
 }
-
-/**
- *   Is Whole Number(mixed $number)
- *       Is Whole Number will return a booleen TRUE if the number is a whole number
- *
- *   Example:
- *       $bolVal = is_whole_number('5.214'); // returns FALSE or 0
- *       $bolVal = is_whole_number('71'); // returns TRUE or 1
- *
- * @param mixed $number
- */
 function is_whole_number($num) {
 	return (is_numeric($num)&&(intval($num)==floatval($num)));
 }
-
 function return_whole_number($num){
 	return floor(clean_number($num));
 }
-
 function return_decimal_number($num){
 	return fmod(clean_number($num), 1);
 }
-
-/**
- *   Ordinalize(mixed $number)
- *       Ordinalize will add 'st', 'nd', 'rd', and 'th' to the end of the number
- *
- *   Example:
- *       $string = ordinalize('83'); // returns '83rd'
- *       $string = ordinalize('12'); // returns '12th'
- *
- * @param mixed $number
- * REQUIRES -- clean_number function
- */
 function ordinalize($num) {
 	$number = floor(clean_number($num));
 	$ordinal = array(1=>'st', 2=>'nd', 3=>'rd');
@@ -148,21 +121,9 @@ function ordinalize($num) {
 	$x = $number % 10;
 	return $number.(($x > 0 && $x < 4 && ($e < 11 || $e > 13)) ? $ordinal[$x] : 'th');
 }
-
-/**
- *   Parity(mixed $number)
- *       Parity will return a booleen TRUE/FALSE if the number is odd or even
- *
- *   Example:
- *       $bolVal = parity('31'); // returns FALSE or 0
- *       $bolVal = parity(42); // returns TRUE or 1
- *
- * @param mixed $number
- */
 function parity($num) {
 	return (is_numeric($num)&(!($num&1)));
 }
-
 function getDistanceBetweenPoints($latitude1, $longitude1, $latitude2, $longitude2) {
 	$theta = $longitude1 - $longitude2;
 	$miles = (sin(deg2rad($latitude1)) * sin(deg2rad($latitude2))) + (cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * cos(deg2rad($theta)));
@@ -199,18 +160,6 @@ function days_month($month, $year = 'NaN') {
 	$return = ($month == 2 ? ($year % 4 ? 28 : ($year % 100 ? 29 : ($year %400 ? 28 : 29))) : (($month - 1) % 7 % 2 ? 30 : 31));
 	return $return;
 }
-
-/**
- * $string = generate_calendar($year, $month, $days, $day_name_length, $month_href, $first_day, $pn);
- *
- * @param mixed $year
- * @param mixed $month
- * @param mixed $days
- * @param mixed $day_name_length
- * @param mixed $month_href
- * @param mixed $first_day
- * @param mixed $pn
- */
 function generate_calendar($year, $month, $days = array(), $day_name_length = 3, $month_href = NULL, $first_day = 0, $pn = array()) {
 	$first_of_month = gmmktime(0, 0, 0, $month, 1, $year);
 	$day_names = array();
@@ -256,11 +205,9 @@ function generate_calendar($year, $month, $days = array(), $day_name_length = 3,
 
 	return $calendar."</tr>\n</table>\n";
 }
-
 function minutestohours($minutes) {
 	return ($minutes > 0 ? sprintf('%02d:%02d', floor($minutes/60), floor($minutes%60)) : 'invalid time');
 }
-
 function _ago($tm, $rcs = 0) {
 	$cur_tm = time();
 	$dif = $cur_tm-$tm;
@@ -275,7 +222,6 @@ function _ago($tm, $rcs = 0) {
 	if(($rcs == 1)&&($v >= 1)&&(($cur_tm-$_tm) > 0)) $x .= time_ago($_tm);
 	return $x;
 }
-
 function remainingTime($time){
 	$rem = strtotime($time) - time();
 	$year = floor($rem / 31536000);
@@ -295,7 +241,6 @@ function remainingTime($time){
 	$output .= "remaining ";
 	return $output;
 }
-
 function secstostr($secs) {
 	if($secs >= 86400){
 		$days = floor($secs/86400);
@@ -321,7 +266,6 @@ function string_continue($text, $len=80) {
 	$string = (strlen($text) > $len ? preg_replace('/[\s\.,][^\s\.,]*$/u', '', substr($text, 0, $len-3)).'...' : $text);
 	return $string;
 }
-
 function string_trim($text, $count){
 	$count = $count - 1;
 	$string = explode(" ", str_replace("  ", " ", $text));
@@ -337,15 +281,6 @@ function string_trim($text, $count){
 	}
 	return trim($trimed);
 }
-
-/**
- * Reduce a string by the middle, keeps whole words together
- *
- * @param string $string
- * @param int $max (default 50)
- * @param string $replacement (default [...])
- * @return string
- */
 function string_mid_trim($string, $max = 50, $rep = '[...]') {
 	$strlen = strlen($string);
 
@@ -386,13 +321,6 @@ function string_mid_trim($string, $max = 50, $rep = '[...]') {
 	return $return;
 	return substr($string, 0, $start) . $rep . substr($string, - $end);
 }
-
-/*
-* Generate random password from a set of chars ($pool)
-*
-* @param   integer $len    Password length
-* @return  string  Rand password
-*/
 function random_passwd($len = 10, $char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789') {
 	$string = '';
 	$pool = $char;
@@ -401,12 +329,10 @@ function random_passwd($len = 10, $char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 	}
 	return $string;
 }
-
 function pluralize($quantity, $singular, $plural) {
 	if ($quantity == 1 || !strlen($singular)) return $singular;
 	if ($plural !== null) return $plural;
 }
-
 function makeLink($text, $label=NULL) {
 	if ($label==NULL){
 		$text = eregi_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1">\1</a>', $text);
@@ -420,7 +346,6 @@ function makeLink($text, $label=NULL) {
 		return $text;
 	}
 }
-
 function getCloud($data = array(), $minFontSize = 12, $maxFontSize = 30){
 	$minimumCount = min($data);
 	$maximumCount = max($data);
@@ -434,7 +359,6 @@ function getCloud($data = array(), $minFontSize = 12, $maxFontSize = 30){
 	}
 	return join( "\n", $cloudTags ) . "\n";
 }
-
 function isemail($email, $test_mx = false){
 	if(eregi("^([_a-z0-9-]+)(\.[_a-z0-9-]+)*@([a-z0-9-]+)(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $email))
 		if ($test_mx) {
@@ -444,7 +368,6 @@ function isemail($email, $test_mx = false){
 		else return true;
 	else return false;
 }
-
 function encode_email($email='info@domain.com', $linkText='Contact Us', $attrs ='class="emailencoder"'){
 	$email = str_replace('@', '&#64;', $email);
 	$email = str_replace('.', '&#46;', $email);
@@ -472,7 +395,6 @@ function encode_email($email='info@domain.com', $linkText='Contact Us', $attrs =
 
 	return $encoded;
 }
-
 function highlighter_text($text, $words) {
 	$fontcolor = "#4285F4";
 
@@ -481,7 +403,6 @@ function highlighter_text($text, $words) {
 	$re = '~\\b(' . implode('|', $m[0]) . ')\\b~';
 	return preg_replace($re, '<span style="color:'.$fontcolor.';font-weight: 700;">$0</span>', $text);
 }
-
 function qr_code($data, $type = "TXT", $size ='150', $ec='L', $margin='0') {
 	$types = array('URL', 'EMAIL', 'TEL', 'MECARD', 'VCARD', 'SMS', 'MMS', 'GEO', 'PLAY', 'WIFI', 'YOUTUBE', 'FACEBOOK', 'TWITTER', 'INSTAGRAM', 'TXT');
 	$errorimg = '';
@@ -611,7 +532,6 @@ function qr_code($data, $type = "TXT", $size ='150', $ec='L', $margin='0') {
 	$response = 'http://chart.apis.google.com/chart?chs='.$size.'x'.$size.'&cht=qr&chld='.$ec.'|'.$margin.'&chl='.$data;
 	return $response;
 }
-
 function wordMatch($words, $input, $sensitivity) {
 	$shortest = -1;
 	foreach ($words as $word) {
@@ -650,19 +570,6 @@ function getIP(){
 	$ip = ($bestIP != '' ? $bestIP : ($bestLocalIP != '' ? $bestLocalIP : 'unknown'));
 	return $ip;
 }
-
-/**
- *   Zip(array $files, string $destination, booleen $overwrite[opt = default false])
- *       Creates a compressed zip file the the destination folder
- *
- *   Example:
- *       $files = array('file1.jpg', 'file2.jpg', 'file3.gif');
- *       zip($files, 'myzipfile.zip', true);
- *
- * @param array $files
- * @param string $destination
- * @return booleen $overwrite
- */
 function zip($files = array(), $destination = '', $overwrite = false){
 	if(file_exists($destination) && !$overwrite) return false;
 
@@ -686,17 +593,6 @@ function zip($files = array(), $destination = '', $overwrite = false){
 	}
 	else return false;
 }
-
-/**
- *   UnZip(array $files, string $destination, booleen $overwrite[opt = default false])
- *       Creates a compressed zip file the the destination folder
- *
- *   Example:
- *       unzip($file, 'folder');
- *
- * @param array $file
- * @param string $destination
- */
 function unzip($file, $destination){
 	$zip = new ZipArchive() ;
 	if ($zip->open($file) !== TRUE) die ("Could not open archive");
@@ -704,7 +600,6 @@ function unzip($file, $destination){
 	$zip->close();
 	echo 'Archive extracted to directory';
 }
-
 function get_client_language($availableLanguages, $default='en'){
 	if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
 		$langs=explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
@@ -718,7 +613,6 @@ function get_client_language($availableLanguages, $default='en'){
 	}
 	return $default;
 }
-
 function strip_xss($val) {
 	$val = preg_replace('/([\x00-\x08][\x0b-\x0c][\x0e-\x20])/', '', $val);
 	$search = 'abcdefghijklmnopqrstuvwxyz';
@@ -759,7 +653,6 @@ function strip_xss($val) {
 	}
 	return $val;
 }
-
 function cleanGlobals(){
 	if ($_GET) {
 		foreach ($_GET as $k => $v) {
@@ -792,7 +685,6 @@ function cleanGlobals(){
 		}
 	}
 }
-
 function safe_redirect($url, $exit=true) {
 
 	// Only use the header redirection if headers are not already sent
@@ -827,7 +719,6 @@ function safe_redirect($url, $exit=true) {
 	// Stop the script here (optional)
 	if ($exit) exit;
 }
-
 function autoglobals(){
 	$ArrayList = array("_POST", "_GET", "_SESSION", "_COOKIE", "_SERVER"); // create an array of the autoglobal arrays we want to process
 	foreach ($ArrayList as $gblArray) {
@@ -893,18 +784,9 @@ function resize_image($filename, $tmpname, $xmax, $ymax){
 	imagecopyresized($im2, $im, 0, 0, 0, 0, floor($newx), floor($newy), $x, $y);
 	return $im2;
 }
-
-/**
- *   Gravatar(string $email, mixed $size, string $url, string $rating)
- * @email - Email address to show gravatar for
- * @size - size of gravatar
- * @default - URL of default gravatar to use
- * @rating - rating of Gravatar(G, PG, R, X)
- */
 function show_gravatar($email, $size, $default, $rating){
 	return '<img src="http://www.gravatar.com/avatar.php?gravatar_id='.md5($email).'&default='.$default.'&size='.$size.'&rating='.$rating.'" width="'.$size.'px" height="'.$size.'px" />';
 }
-
 function Hex2RGB($color){
 	$color = str_replace('#', '', $color);
 	if (strlen($color) != 6){ return array(0,0,0); }
@@ -926,27 +808,14 @@ function values2keys($arr, $value=1){
 	}
 	return $new;
 }
-
 function strReplaceAssoc(array $replace, $subject) {
 	return str_replace(array_keys($replace), array_values($replace), $subject);
 }
-
-/**
- *   Is Numeric Array(mixed $array)
- *       Is Numeric Array will test an array for numeric values will return TRUE if all values are numeric
- *
- *   Example:
- *       $array = array('price'=>'5.99', 'itemnum'=>'45234', 'qty'=>15);
- *       $bolVal = is_numeric_array($array); // returns TRUE or 1
- *
- * @param mixed $array
- */
 function is_numeric_array($array) {
 	foreach ($array as $key => $value)
 		if (!is_numeric($value)) return false;
 		else return true;
 }
-
 function array_changecase($array, $case = 'lower'){
 	return array_change_key_case($array, ($c=='upper') ? CASE_UPPER : CASE_LOWER);
 }

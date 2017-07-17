@@ -1,20 +1,6 @@
 <?php
 	require_once('3rdParty'.DS.'BrowserDetection.php');
 	$browser = new BrowserDetection();
-	$ipvars = array('HTTP_X_FORWARDED_FOR','HTTP_NS_CLIENT_IP','HTTP_CLIENT_IP','REMOTE_ADDR');
-	$bestIP = $bestLocalIP = '';
-
-	foreach($ipvars as $ipvar){
-		$ip = isset($_SERVER[$ipvar]) ? $_SERVER[$ipvar] : null;
-		if($ip && stripos($ip,'unknown')!==0 && strpos($ip,'127.')!==0 && strpos($ip,'10.')!==0 && strpos($ip,'172.16.')!==0 && strpos($ip,'192.168.')!==0 && stripos($ip,'localhost')!==0){
-			$bestIP = $bestIP=='' ? $ip : $bestIP;
-		} elseif($ip && (strpos($ip,'127.')===0 || strpos($ip,'10.')===0 || strpos($ip,'172.16.')===0 || strpos($ip,'192.168.')===0 || stripos($ip,'localhost')===0)){
-			$bestLocalIP = $bestLocalIP=='' ? $ip : $bestLocalIP;
-		}
-	}
-
-	// Here is the IP, what do you want to do with it?
-	$ip = ($bestIP != '' ? $bestIP : ($bestLocalIP != '' ? $bestLocalIP : 'unknown'));
 
 	# These are Ternary Operators, please do not modify them unless you know what you are doing! Here is a break down of the operator:
 	# $browser->function DOES NOT EQUAL '' then check to see if the name is defined, if it is not, then define it. If it is, send it to the error reporting system, anything else just null it.
@@ -31,7 +17,6 @@
 	(! defined('isIECompat') ? define('isIECompat', $browser->isInIECompatibilityView()) : SysError('Warning', 'isIECompat already defined, this error has been recovered, although it may not function correctly.', '110'));
 	(! defined('isChromeFrame') ? define('isChromeFrame', $browser->isChromeFrame()) : SysError('Warning', 'isChromeFrame already defined, this error has been recovered, although it may not function correctly.', '111'));
 	(! defined('isAOL') ? define('isAOL', $browser->isAol()) : SysError('Warning', 'isAOL already defined, this error has been recovered, although it may not function correctly.', '112'));
-	(! defined('visitorIP') ? define('visitorIP', $ip) : SysError('Warning', 'visitorIP already defined, this error has been recovered, although it may not function correctly.', '113'));
 
 	$loaded = TRUE;
 	($loaded && !defined('plg_visitor') ? define('plg_visitor', TRUE) : define('plg_visitor', FALSE));
