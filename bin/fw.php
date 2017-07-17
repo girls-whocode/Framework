@@ -1,7 +1,6 @@
 <?php
 	# Test server for resources needed to operate
 	$loaded_ext = array('bcmath', 'bz2', 'curl', 'date', 'dom', 'ereg', 'exif', 'gd', 'mbstring', 'mcrypt', 'session', 'xml', 'xmlreader', 'xmlrpc', 'xmlwriter', 'zip', 'zlib');
-
 	foreach ($loaded_ext as $isloaded) {
 		if (!extension_loaded ($isloaded)) {
 			SysError ('critical', 'Your PHP does not have '.$isloaded.' installed.<br />Use: sudo apt install php7.0-'.$isloaded, 'fw1000');
@@ -40,7 +39,7 @@
     # Check for any new updates
 		# Future
 
-    # Test etc folder for any modules, plugins and components that was added
+    # Test user defined etc folder for any modules, plugins and components that was added
 	$dirs = array_filter(glob(ETCDIR.DS.'*'), 'is_dir');
 	foreach ($dirs as $dir) {
 		switch (substr($dir, strlen(ETCDIR)+1, 3)){

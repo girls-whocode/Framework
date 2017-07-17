@@ -12,7 +12,15 @@
 	echo dump($arr, TRUE, TRUE).BRN;
 
 # plg_system
+	echo 'Framework Functions:'.BRN;
+	echo 'Numeric Functions:'.BR.BRN;
 	echo 'echo clean_number(\'4f32k91025\'); <span style="color: orange; font-style: italic"># will output '.clean_number('4f32k91025').'</span>'.BRN;
-	echo 'echo decimal_to_fraction(\'.125\'); <span style="color: orange; font-style: italic"># will output '.decimal_to_fraction ('.125').'</span>'.BRN;
+	echo 'echo decimal_to_fraction(0.125); <span style="color: orange; font-style: italic"># will output '.decimal_to_fraction (0.125).'</span>'.BRN;
 	echo 'echo fraction_to_decimal(\'1/8\'); <span style="color: orange; font-style: italic"># will output '.fraction_to_decimal ('1/8').'</span>'.BRN;
-	echo 'echo (is_whole_number(\'45\') ? "TRUE" : "FALSE"); <span style="color: orange; font-style: italic"># will output '.(is_whole_number (45) ? "TRUE" : "FALSE").'</span>'.BRN;
+	echo 'echo (is_whole_number(45) ? "TRUE" : "FALSE"); <span style="color: orange; font-style: italic"># will output '.(is_whole_number (45) ? "TRUE" : "FALSE").'</span>'.BRN;
+	echo 'echo return_whole_number(45.34); <span style="color: orange; font-style: italic"># will output '.return_whole_number (45.34).'</span>'.BRN;
+	echo 'echo return_decimal_number(45.34); <span style="color: orange; font-style: italic"># will output '.return_decimal_number (45.34).'</span>'.BRN;
+	echo 'echo ordinalize(3); <span style="color: orange; font-style: italic"># will output '.ordinalize (3).'</span>'.BRN;
+	echo 'echo parity(3); <span style="color: orange; font-style: italic"># will output '.parity (3).'</span>'.BRN;
+	echo 'echo Cincinnati, OH to Norfolk, VA, getDistanceBetweenPoints(39.103119, -84.512016, 36.850769, -76.285873); <span style="color: orange; font-style: italic"># will output '.getDistanceBetweenPoints (39.103119, -84.512016,  36.850769, -76.285873).'</span>'.BRN;
+	echo BR.BRN;
