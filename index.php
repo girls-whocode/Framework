@@ -25,3 +25,4 @@
 	echo 'echo Cincinnati, OH to Norfolk, VA, getDistanceBetweenPoints(39.103119, -84.512016, 36.850769, -76.285873); <span style="color: orange; font-style: italic"># will output Array</span>'.BRN;
 	print_r(getDistanceBetweenPoints (39.103119, -84.512016,  36.850769, -76.285873));
 	echo BR.BRN;
+	print_r(getAddressFromPoints (39.103119, -84.512016));
