@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/fw.php" afterPath="$PROJECT_DIR$/bin/fw.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="23">
+              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fw.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fw.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/fw.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="140" lean-forward="true" selection-start-line="6" selection-start-column="140" selection-end-line="6" selection-end-column="140" />
+            <state relative-caret-position="207">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <marker date="1500289484592" expanded="true" signature="1771:1783" ph="..." />
                 <marker date="1500289484592" expanded="true" signature="1848:1860" ph="..." />
@@ -171,8 +172,8 @@
         <option value="$PROJECT_DIR$/etc/plg_database/plg_database.php" />
         <option value="$PROJECT_DIR$/etc/plg_system/plg_system.php" />
         <option value="$PROJECT_DIR$/etc/plg_visitor/plg_visitor.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/bin/fw.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -368,7 +369,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="sshConsole" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -477,7 +478,7 @@
       <option name="presentableId" value="Default" />
       <updated>1500034866002</updated>
       <workItem from="1500034868816" duration="4251000" />
-      <workItem from="1500039643184" duration="41774000" />
+      <workItem from="1500039643184" duration="42337000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Array Count into Info box from the title, bumped version to 2.3.2">
       <created>1500204982215</created>
@@ -514,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500288846565</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update ver 0.1 Beta (Build 6)&#10;Updated PHP Module testing">
+      <created>1500289514929</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1500289514929</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46025000" />
+    <option name="totallyTimeSpent" value="46588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +576,8 @@
     <MESSAGE value="Update ver 0.1 Beta (Build 3)&#10;Added plg_database, plg_system&#10;Added visitorIP" />
     <MESSAGE value="Update ver 0.1 Beta (Build 4)&#10;Removed Constant visitorIP&#10;Added function getIP in plg_system&#10;Cleaned up code" />
     <MESSAGE value="Update ver 0.1 Beta (Build 5)&#10;Started PHP Module testing&#10;Started plg_system testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1 Beta (Build 5)&#10;Started PHP Module testing&#10;Started plg_system testing" />
+    <MESSAGE value="Update ver 0.1 Beta (Build 6)&#10;Updated PHP Module testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1 Beta (Build 6)&#10;Updated PHP Module testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1321,14 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1339,8 +1340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/fw.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="140" lean-forward="true" selection-start-line="6" selection-start-column="140" selection-end-line="6" selection-end-column="140" />
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <marker date="1500289484592" expanded="true" signature="1771:1783" ph="..." />
             <marker date="1500289484592" expanded="true" signature="1848:1860" ph="..." />
@@ -1348,6 +1349,14 @@
             <marker date="1500289484592" expanded="true" signature="2085:2098" ph="..." />
             <marker date="1500289484592" expanded="true" signature="2130:2141" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
