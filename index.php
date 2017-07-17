@@ -22,5 +22,6 @@
 	echo 'echo return_decimal_number(45.34); <span style="color: orange; font-style: italic"># will output '.return_decimal_number (45.34).'</span>'.BRN;
 	echo 'echo ordinalize(3); <span style="color: orange; font-style: italic"># will output '.ordinalize (3).'</span>'.BRN;
 	echo 'echo parity(3); <span style="color: orange; font-style: italic"># will output '.parity (3).'</span>'.BRN;
-	echo 'echo Cincinnati, OH to Norfolk, VA, getDistanceBetweenPoints(39.103119, -84.512016, 36.850769, -76.285873); <span style="color: orange; font-style: italic"># will output '.getDistanceBetweenPoints (39.103119, -84.512016,  36.850769, -76.285873).'</span>'.BRN;
+	echo 'echo Cincinnati, OH to Norfolk, VA, getDistanceBetweenPoints(39.103119, -84.512016, 36.850769, -76.285873); <span style="color: orange; font-style: italic"># will output Array</span>'.BRN;
+	print_r(getDistanceBetweenPoints (39.103119, -84.512016,  36.850769, -76.285873));
 	echo BR.BRN;
