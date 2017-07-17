@@ -141,7 +141,28 @@ function getAddressFromPoints($latitude, $longitude)   {
 	$json = @file_get_contents($url);
 	$data=json_decode($json);
 	$status = $data->status;
-	return ($status=="OK" ? $data->results[0]->formatted_address : false);
+	$address = array(
+		"formatted_address"=>$data->results[0]->formatted_address,
+		"street_number_long"=>$data->results[0]->address_components[0]->long_name,
+		"street_number_short"=>$data->results[0]->address_components[0]->short_name,
+		"street_name_long"=>$data->results[0]->address_components[1]->long_name,
+		"street_name_short"=>$data->results[0]->address_components[1]->short_name,
+		"street_type"=>$data->results[0]->address_components[1]->types[0],
+		"city_name_long"=>$data->results[0]->address_components[3]->long,
+		"city_name_short"=>$data->results[0]->address_components[3]->short,
+		"county_name_long"=>$data->results[0]->address_components[4]->long,
+		"county_name_short"=>$data->results[0]->address_components[4]->short,
+		"state_name_long"=>$data->results[0]->address_components[5]->long,
+		"state_name_short"=>$data->results[0]->address_components[5]->short,
+		"country_name_long"=>$data->results[0]->address_components[6]->long,
+		"country_name_short"=>$data->results[0]->address_components[6]->short,
+		"zipcode_long"=>$data->results[0]->address_components[7]->long,
+		"zipcode_short"=>$data->results[0]->address_components[7]->short,
+		"zipcode_ext_long"=>$data->results[0]->address_components[8]->long,
+		"zipcode_ext_short"=>$data->results[0]->address_components[8]->short,
+
+	);
+	return ($status=="OK" ? $address : false);
 }
 
 # DATE FUNCTIONS
