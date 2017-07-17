@@ -11,6 +11,7 @@
     }
 
     # These settings should not be changed:
+	$rootPath = str_replace(basename(dirname(__FILE__)), '', basename(dirname(__FILE__)));
 	define('BINDIR', 'bin');
 	define('ETCDIR', 'etc');
 	define('SYSDIR', 'system');
