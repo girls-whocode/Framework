@@ -1,10 +1,10 @@
 <?php
 	# Test server for resources needed to operate
-	$loaded_ext = array('mbstring', 'bcmath');
+	$loaded_ext = array('bcmath', 'bz2', 'curl', 'date', 'dom', 'ereg', 'exif', 'gd', 'mbstring', 'mcrypt', 'session', 'xml', 'xmlreader', 'xmlrpc', 'xmlwriter', 'zip', 'zlib');
 
 	foreach ($loaded_ext as $isloaded) {
 		if (!extension_loaded ($isloaded)) {
-			SysError ('critical', 'Your PHP does not have '.$isloaded.' installed.', 'fw1000');
+			SysError ('critical', 'Your PHP does not have '.$isloaded.' installed.<br />Use: sudo apt install php7.0-'.$isloaded, 'fw1000');
 		}
 	}
 

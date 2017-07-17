@@ -4,7 +4,6 @@
     <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/fw.php" afterPath="$PROJECT_DIR$/bin/fw.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,14 +40,14 @@
       <file leaf-file-name="fw.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/fw.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="138">
+              <caret line="6" column="140" lean-forward="true" selection-start-line="6" selection-start-column="140" selection-end-line="6" selection-end-column="140" />
               <folding>
-                <marker date="1500288780220" expanded="true" signature="1595:1607" ph="..." />
-                <marker date="1500288780220" expanded="true" signature="1672:1684" ph="..." />
-                <marker date="1500288780220" expanded="true" signature="1758:1770" ph="..." />
-                <marker date="1500288780220" expanded="true" signature="1909:1922" ph="..." />
-                <marker date="1500288780220" expanded="true" signature="1954:1965" ph="..." />
+                <marker date="1500289484592" expanded="true" signature="1771:1783" ph="..." />
+                <marker date="1500289484592" expanded="true" signature="1848:1860" ph="..." />
+                <marker date="1500289484592" expanded="true" signature="1934:1946" ph="..." />
+                <marker date="1500289484592" expanded="true" signature="2085:2098" ph="..." />
+                <marker date="1500289484592" expanded="true" signature="2130:2141" ph="..." />
               </folding>
             </state>
           </provider>
@@ -478,7 +477,7 @@
       <option name="presentableId" value="Default" />
       <updated>1500034866002</updated>
       <workItem from="1500034868816" duration="4251000" />
-      <workItem from="1500039643184" duration="41073000" />
+      <workItem from="1500039643184" duration="41774000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Array Count into Info box from the title, bumped version to 2.3.2">
       <created>1500204982215</created>
@@ -508,11 +507,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500287560876</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update ver 0.1 Beta (Build 5)&#10;Started PHP Module testing&#10;Started plg_system testing">
+      <created>1500288846565</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1500288846565</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45324000" />
+    <option name="totallyTimeSpent" value="46025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +567,8 @@
     <MESSAGE value="Update ver 0.1 Beta (Build 2)" />
     <MESSAGE value="Update ver 0.1 Beta (Build 3)&#10;Added plg_database, plg_system&#10;Added visitorIP" />
     <MESSAGE value="Update ver 0.1 Beta (Build 4)&#10;Removed Constant visitorIP&#10;Added function getIP in plg_system&#10;Cleaned up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1 Beta (Build 4)&#10;Removed Constant visitorIP&#10;Added function getIP in plg_system&#10;Cleaned up code" />
+    <MESSAGE value="Update ver 0.1 Beta (Build 5)&#10;Started PHP Module testing&#10;Started plg_system testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1 Beta (Build 5)&#10;Started PHP Module testing&#10;Started plg_system testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -583,11 +590,11 @@
         <state relative-caret-position="60">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding>
-            <marker date="1500288780220" expanded="true" signature="1595:1607" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1672:1684" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1758:1770" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1909:1922" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1954:1965" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="1771:1783" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="1848:1860" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="1934:1946" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="2085:2098" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="2130:2141" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1332,14 +1339,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/fw.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="138">
+          <caret line="6" column="140" lean-forward="true" selection-start-line="6" selection-start-column="140" selection-end-line="6" selection-end-column="140" />
           <folding>
-            <marker date="1500288780220" expanded="true" signature="1595:1607" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1672:1684" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1758:1770" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1909:1922" ph="..." />
-            <marker date="1500288780220" expanded="true" signature="1954:1965" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="1771:1783" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="1848:1860" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="1934:1946" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="2085:2098" ph="..." />
+            <marker date="1500289484592" expanded="true" signature="2130:2141" ph="..." />
           </folding>
         </state>
       </provider>
