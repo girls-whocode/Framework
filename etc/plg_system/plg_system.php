@@ -163,6 +163,14 @@ function getAddressFromPoints($latitude, $longitude)   {
 	);
 	return ($status=="OK" ? $address : false);
 }
+function AddressToPoints($address){
+	$prepAddr = str_replace(' ','+',$address);
+	$geocode=file_get_contents('https://maps.google.com/maps/api/geocode/json?address='.$prepAddr.'&sensor=false');
+	$output= json_decode($geocode);
+	$latitude = $output->results[0]->geometry->location->lat;
+	$longitude = $output->results[0]->geometry->location->lng;
+	return ($latitude.", ".$longitude);
+}
 
 # DATE FUNCTIONS
 /**
