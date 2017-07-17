@@ -1,4 +1,13 @@
 <?php
+	# Test server for resources needed to operate
+	$loaded_ext = array('mbstring', 'bcmath');
+
+	foreach ($loaded_ext as $isloaded) {
+		if (!extension_loaded ($isloaded)) {
+			SysError ('critical', 'Your PHP does not have '.$isloaded.' installed.', 'fw1000');
+		}
+	}
+
     # Check for system files needed to operate
     if (file_exists('bin/config.php')) {
         require_once ("bin/config.php");
@@ -27,8 +36,6 @@
             break;
         }
     }
-
-    # Test server for resources needed to operate
 
     # Check for any new updates
 		# Future
