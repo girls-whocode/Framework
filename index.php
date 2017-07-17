@@ -12,5 +12,5 @@
 	echo dump($arr, TRUE, TRUE).BRN;
 
 # plg_system
-	echo 'echo clean_number(\'4f32k91025\'); will output '.clean_number('4f32k91025').BRN;
-	echo 'echo '.BRN;
+	echo 'echo clean_number(\'4f32k91025\'); <span style="color: orange; font-style: italic"># will output '.clean_number('4f32k91025').'</span>'.BRN;
+	echo 'echo decimal_to_fraction(\'.675\'); <span style="color: orange; font-style: italic"># will output </span>'.decimal_to_fraction ('.675').'</span>'.BRN;
