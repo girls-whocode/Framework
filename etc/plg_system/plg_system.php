@@ -124,6 +124,8 @@ function ordinalize($num) {
 function parity($num) {
 	return (is_numeric($num)&(!($num&1)));
 }
+
+# ADDRESS/GEOLOCATION
 function getDistanceBetweenPoints($latitude1, $longitude1, $latitude2, $longitude2) {
 	$theta = $longitude1 - $longitude2;
 	$miles = (sin(deg2rad($latitude1)) * sin(deg2rad($latitude2))) + (cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * cos(deg2rad($theta)));

@@ -22,8 +22,11 @@
 	echo 'echo return_decimal_number(45.34); <span style="color: orange; font-style: italic"># will output '.return_decimal_number (45.34).'</span>'.BRN;
 	echo 'echo ordinalize(3); <span style="color: orange; font-style: italic"># will output '.ordinalize (3).'</span>'.BRN;
 	echo 'echo parity(3); <span style="color: orange; font-style: italic"># will output '.parity (3).'</span>'.BRN;
-	echo 'echo Cincinnati, OH to Norfolk, VA, getDistanceBetweenPoints(39.103119, -84.512016, 36.850769, -76.285873); <span style="color: orange; font-style: italic"># will output Array</span>'.BRN;
+	echo 'echo getDistanceBetweenPoints(39.103119, -84.512016, 36.850769, -76.285873); <span style="color: orange; font-style: italic"># Example is Cincinnati, OH to Norfolk, VA -- will output Array</span>'.BRN;
 	print_r(getDistanceBetweenPoints (39.103119, -84.512016,  36.850769, -76.285873));
-	print_r(getAddressFromPoints (39.434097, -84.4512746));
-	echo AddressToPoints ('381 Barker Dr. Hamilton, Ohio 45011');
+	echo BR.BRN;
+	echo 'echo getAddressFromPoints (39.103119, -84.512016)<span style="color: orange; font-style: italic"># Example is Cincinnati, OH -- will output Array</span>'.BRN;
+	print_r(getAddressFromPoints (39.103119, -84.512016));
+	echo BR.BRN;
+	echo 'echo AddressToPoints (\'10 Fountain Square, Cincinnati, OH 45202\')<span style="color: orange; font-style: italic"># will output '.AddressToPoints ('10 Fountain Square, Cincinnati, OH 45202').'</span>'.BRN;
 	echo BR.BRN;
