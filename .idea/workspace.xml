@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="260">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
                 <marker date="1500325248876" expanded="true" signature="538:571" ph="..." />
                 <marker date="1500325248876" expanded="true" signature="684:717" ph="..." />
@@ -53,8 +53,8 @@
       <file leaf-file-name="fw.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/fw.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="40">
+              <caret line="2" column="175" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="175" />
               <folding>
                 <marker date="1500296111688" expanded="true" signature="1783:1795" ph="..." />
                 <marker date="1500296111688" expanded="true" signature="1860:1872" ph="..." />
@@ -126,19 +126,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/config.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -174,6 +161,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="440">
+                <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -204,9 +204,9 @@
         <option value="$PROJECT_DIR$/etc/plg_database/plg_database.php" />
         <option value="$PROJECT_DIR$/etc/plg_visitor/plg_visitor.php" />
         <option value="$PROJECT_DIR$/bin/fw.php" />
-        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/etc/plg_system/plg_system.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -519,7 +519,7 @@
       <option name="presentableId" value="Default" />
       <updated>1500034866002</updated>
       <workItem from="1500034868816" duration="4251000" />
-      <workItem from="1500039643184" duration="58481000" />
+      <workItem from="1500039643184" duration="61046000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Array Count into Info box from the title, bumped version to 2.3.2">
       <created>1500204982215</created>
@@ -675,11 +675,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500325201123</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update ver 0.1.1 Beta (Build 19)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
+      <created>1500325265168</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1500325265168</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62732000" />
+    <option name="totallyTimeSpent" value="65297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,7 +750,8 @@
     <MESSAGE value="Update ver 0.1.1 Beta (Build 16)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 17)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 18)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1.1 Beta (Build 18)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
+    <MESSAGE value="Update ver 0.1.1 Beta (Build 19)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1.1 Beta (Build 19)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1463,31 +1471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/fw.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <marker date="1500296111688" expanded="true" signature="1783:1795" ph="..." />
-            <marker date="1500296111688" expanded="true" signature="1860:1872" ph="..." />
-            <marker date="1500296111688" expanded="true" signature="1946:1958" ph="..." />
-            <marker date="1500296111688" expanded="true" signature="2097:2110" ph="..." />
-            <marker date="1500296111688" expanded="true" signature="2142:2153" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/etc/plg_system/plg_system.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -1546,10 +1529,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/fw.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="175" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="175" />
+          <folding>
+            <marker date="1500296111688" expanded="true" signature="1783:1795" ph="..." />
+            <marker date="1500296111688" expanded="true" signature="1860:1872" ph="..." />
+            <marker date="1500296111688" expanded="true" signature="1946:1958" ph="..." />
+            <marker date="1500296111688" expanded="true" signature="2097:2110" ph="..." />
+            <marker date="1500296111688" expanded="true" signature="2142:2153" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="440">
+            <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="260">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
             <marker date="1500325248876" expanded="true" signature="538:571" ph="..." />
             <marker date="1500325248876" expanded="true" signature="684:717" ph="..." />
