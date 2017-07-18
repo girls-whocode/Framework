@@ -96,7 +96,7 @@ function fraction_to_decimal ($fraction) {
 	$numbers = explode("/", $fraction);
 	if ($numbers[0] >= $numbers[1]) {
 		$wholenum = floor($numbers[0] / $numbers[1]);
-		$decimal = ($numbers[0] - ($numbers[0] * $wholenum)) / $numbers[1];
+		$decimal = (floor($numbers[0] - ($numbers[0] * $wholenum))) / $numbers[1];
 	}
 	else {
 		$decimal = $numbers[0] / $numbers[1];
