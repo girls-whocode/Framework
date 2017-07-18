@@ -92,18 +92,34 @@ function decimal_to_fraction($float) {
 	return ($whole == 0 ? '' : $whole) . " " . ($roundedDecimal * $denom) . "/" . $denom;
 }
 function fraction_to_decimal ($fraction) {
-	$wholenum = array_map('trim', explode(" ", $fraction));
-	if (count($wholenum) == 1) $wholenum = ''; else $wholenum = $wholenum[0];
-	$numbers = explode("/", $fraction);
-	if ($numbers[0] >= $numbers[1]) {
-		$wholenum = floor($numbers[0] / $numbers[1]);
-		$decimal = (floor($numbers[0] - ($numbers[0] * $wholenum))) / $numbers[1];
+	$wholenum = explode(" ", $fraction);
+	var_dump($wholenum);
+	if (count($wholenum) == 1) {
+		$wholenum = '';
+		$numbers = explode("/", $fraction);
+		if ($numbers[0] >= $numbers[1]) {
+			$wholenum = floor($numbers[0] / $numbers[1]);
+			$decimal = (floor($numbers[0] - ($numbers[0] * $wholenum))) / $numbers[1];
+		}
+		else {
+			$decimal = $numbers[0] / $numbers[1];
+		}
 	}
 	else {
-		$decimal = $numbers[0] / $numbers[1];
+		$wholenumber = $wholenum[0];
+		$numbers = explode("/", $wholenum[1]);
+		if ($numbers[0] >= $numbers[1]) {
+			$wholenum = floor($numbers[0] / $numbers[1]);
+			$decimal = (floor($numbers[0] - ($numbers[0] * $wholenum))) / $numbers[1];
+		}
+		else {
+			$decimal = $numbers[0] / $numbers[1];
+		}
+
 	}
+
 	$cleaned = (explode(".", $decimal));
-	$return = ($wholenum != '' ? $wholenum : '0').'.'.$cleaned[1];
+	$return = ($wholenumber != '' ? $wholenumber : '0').'.'.$cleaned[1];
 	return $return;
 }
 function is_whole_number($num) {
