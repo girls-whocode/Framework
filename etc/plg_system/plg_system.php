@@ -791,7 +791,7 @@ function autoglobals(){
 }
 function hitcounter(){
 	$filename = DATADIR.DS.'count.log';
-	$data = fopen($filename,"w");
+	$data = fopen($filename,"w+");
 	$count = fgets($data,1000);
 	fclose($data);
 	$count++;
