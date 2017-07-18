@@ -791,13 +791,13 @@ function autoglobals(){
 }
 function hitcounter(){
 	$filename = DATADIR.DS.'count.log';
-	$datei = fopen($filename,"r");
-	$count = fgets($datei,1000);
-	fclose($datei);
-	$count = $count + 1 ;
-	$datei = fopen($filename,"w");
-	fwrite($datei, $count);
-	fclose($datei);
+	$data = fopen($filename,"w");
+	$count = fgets($data,1000);
+	fclose($data);
+	$count++;
+	$data = fopen($filename,"w");
+	fwrite($data, $count);
+	fclose($data);
 	return $count;
 }
 

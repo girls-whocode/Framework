@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/plg_system/plg_system.php" afterPath="$PROJECT_DIR$/etc/plg_system/plg_system.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="88" lean-forward="false" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+            <state relative-caret-position="300">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
                 <marker date="1500337701625" expanded="true" signature="630:663" ph="..." />
                 <marker date="1500337701625" expanded="true" signature="776:809" ph="..." />
@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plg_system.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plg_system.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/etc/plg_system/plg_system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="802" column="0" lean-forward="true" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
+            <state relative-caret-position="586">
+              <caret line="793" column="30" lean-forward="false" selection-start-line="793" selection-start-column="30" selection-end-line="793" selection-end-column="30" />
               <folding>
                 <element signature="n#clean_number#0;n#!!top" expanded="false" />
                 <element signature="n#decimal_to_fraction#0;n#!!top" expanded="false" />
@@ -121,10 +121,10 @@
                 <element signature="n#is_numeric_array#0;n#!!top" expanded="false" />
                 <element signature="n#array_changecase#0;n#!!top" expanded="false" />
                 <element signature="n#SQLclean#0;n#!!top" expanded="false" />
-                <marker date="1500337061278" expanded="true" signature="23277:23283" ph=" " />
-                <marker date="1500337061278" expanded="true" signature="23300:23306" ph=" " />
-                <marker date="1500337061278" expanded="true" signature="23881:23887" ph=" " />
-                <marker date="1500337061278" expanded="true" signature="24500:24506" ph=" " />
+                <marker date="1500339119213" expanded="true" signature="23277:23283" ph=" " />
+                <marker date="1500339119213" expanded="true" signature="23300:23306" ph=" " />
+                <marker date="1500339119213" expanded="true" signature="23881:23887" ph=" " />
+                <marker date="1500339119213" expanded="true" signature="24500:24506" ph=" " />
               </folding>
             </state>
           </provider>
@@ -194,8 +194,8 @@
         <option value="$PROJECT_DIR$/bin/fw.php" />
         <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/bin/config.php" />
-        <option value="$PROJECT_DIR$/etc/plg_system/plg_system.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/etc/plg_system/plg_system.php" />
       </list>
     </option>
   </component>
@@ -562,7 +562,7 @@
       <option name="presentableId" value="Default" />
       <updated>1500034866002</updated>
       <workItem from="1500034868816" duration="4251000" />
-      <workItem from="1500039643184" duration="62669000" />
+      <workItem from="1500039643184" duration="63772000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Array Count into Info box from the title, bumped version to 2.3.2">
       <created>1500204982215</created>
@@ -746,11 +746,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500337623722</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes">
+      <created>1500337722739</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1500337722739</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66920000" />
+    <option name="totallyTimeSpent" value="68023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +826,8 @@
     <MESSAGE value="Update ver 0.1.1 Beta (Build 19)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 19)&#10;Added Hit Counter Function to the System Plugins" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security" />
+    <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1620,10 +1628,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <marker date="1500337701625" expanded="true" signature="630:663" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="776:809" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="925:958" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="1086:1119" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="1247:1280" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="1396:1429" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="1532:1565" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="1649:1682" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="1872:1905" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="2151:2184" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="2405:2438" ph="..." />
+            <marker date="1500337701625" expanded="true" signature="2439:2472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/etc/plg_system/plg_system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="802" column="0" lean-forward="true" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
+        <state relative-caret-position="586">
+          <caret line="793" column="30" lean-forward="false" selection-start-line="793" selection-start-column="30" selection-end-line="793" selection-end-column="30" />
           <folding>
             <element signature="n#clean_number#0;n#!!top" expanded="false" />
             <element signature="n#decimal_to_fraction#0;n#!!top" expanded="false" />
@@ -1670,39 +1707,10 @@
             <element signature="n#is_numeric_array#0;n#!!top" expanded="false" />
             <element signature="n#array_changecase#0;n#!!top" expanded="false" />
             <element signature="n#SQLclean#0;n#!!top" expanded="false" />
-            <marker date="1500337061278" expanded="true" signature="23277:23283" ph=" " />
-            <marker date="1500337061278" expanded="true" signature="23300:23306" ph=" " />
-            <marker date="1500337061278" expanded="true" signature="23881:23887" ph=" " />
-            <marker date="1500337061278" expanded="true" signature="24500:24506" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="88" lean-forward="false" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
-          <folding>
-            <marker date="1500337701625" expanded="true" signature="630:663" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="776:809" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="925:958" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="1086:1119" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="1247:1280" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="1396:1429" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="1532:1565" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="1649:1682" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="1872:1905" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="2151:2184" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="2405:2438" ph="..." />
-            <marker date="1500337701625" expanded="true" signature="2439:2472" ph="..." />
+            <marker date="1500339119213" expanded="true" signature="23277:23283" ph=" " />
+            <marker date="1500339119213" expanded="true" signature="23300:23306" ph=" " />
+            <marker date="1500339119213" expanded="true" signature="23881:23887" ph=" " />
+            <marker date="1500339119213" expanded="true" signature="24500:24506" ph=" " />
           </folding>
         </state>
       </provider>
