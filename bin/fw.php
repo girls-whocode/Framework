@@ -23,12 +23,21 @@
     # Check the environment
     switch (ENVIRONMENT) {
         case "PRODUCTION":{
+	        ini_set('display_errors', 0);
+	        ini_set('display_startup_errors', 0);
+	        error_reporting(NONE);
             break;
         }
         case "DEBUG":{
+	        ini_set('display_errors', 1);
+	        ini_set('display_startup_errors', 1);
+	        error_reporting(E_ALL);
             break;
         }
         case "DEVELOPMENT":{
+	        ini_set('display_errors', 1);
+	        ini_set('display_startup_errors', 1);
+	        error_reporting(E_ALL);
             break;
         }
         default:{
@@ -60,6 +69,7 @@
 	}
 
 	function loadPlugin($plgName, $plgDir){
+		$config[] = '';
 		if (! file_exists ($plgDir.DS.'plg_'.$plgName.'.php')) {
 			$message = 'Loading plugin <span style="color: blue;">' . $plgName . '</span> from the Plugin Directory <span style="color: blue;">' . $plgDir . '</span> ';
 			$message .= 'looking for file <span style="color: blue;">' . $plgDir . DS . 'plg_' . $plgName . '.php' . '</span> is ' . (file_exists ($plgDir . DS . 'plg_' . $plgName . '.php') ? '<span style="color: green;">found</span>' : '<span style="color: red;">not found</span>');
