@@ -794,7 +794,7 @@ function hitcounter(){
 	$data = fopen($filename,"w+");
 	$count = fgets($data,1000);
 	fclose($data);
-	$count++;
+	$count = $count + 1;
 	$data = fopen($filename,"w");
 	fwrite($data, $count);
 	fclose($data);
