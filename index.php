@@ -33,4 +33,24 @@
 	echo 'echo AddressToPoints (\'10 Fountain Square, Cincinnati, OH 45202\')<span style="color: orange; font-style: italic"># will output '.AddressToPoints ('10 Fountain Square, Cincinnati, OH 45202').'</span>'.BRN;
 	echo BR.BRN;
 	echo 'Date Functions:'.BR.BRN;
-	echo days_month('2', '2014');
+	echo days_month('2', '2014').BR;
+	echo generate_calendar('2017', '01').BR;
+	echo minutestohours(494).BR;
+	echo _ago(45).BR;
+	echo remainingTime(date('Y-m-d', strtotime('+5 years +4 month +2 weeks +5 days +18 hours +43 minutes +31 seconds'))).BR;
+	echo secstostr(269).BR;
+	echo BR.BRN;
+	echo 'String Functions:'.BR.BRN;
+	echo string_continue('Today is the day for all good men to come to the aid of their country.', 30).BR;
+	echo string_trim('Today is the day for all good men to come to the aid of their country.', 30).BR;
+	echo string_mid_trim('Today is the day for all good men to come to the aid of their country.', 30).BR;
+	echo random_passwd(12).BR;
+	echo pluralize(3, 'box', 'boxes').BR;
+	echo makeLink('JBrowns', 'JBrowns').BR;
+	echo getCloud(array('PHP', 'Framework', 'GitHub', 'JBrowns.com', 'Diablos', 'NEAT')).BR;
+	echo isemail('jessica@jbrowns.com').BR;
+	echo encode_email('jessica@jbrowns.com').BR;
+	echo highlighter_text('Today is the day for all good men to come to the aid of their country', 'good men').BR;
+	echo qr_code('http://www.jbrowns.com').BR;
+	echo wordMatch('hello, today, aid', 'Today is the day for all good men to come to the aid of their country.', '2').BR;
+

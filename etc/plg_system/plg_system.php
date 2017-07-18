@@ -409,9 +409,9 @@ function getCloud($data = array(), $minFontSize = 12, $maxFontSize = 30){
 	return join( "\n", $cloudTags ) . "\n";
 }
 function isemail($email, $test_mx = false){
-	if(eregi("^([_a-z0-9-]+)(\.[_a-z0-9-]+)*@([a-z0-9-]+)(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $email))
+	if(preg_match("^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+)(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,4})$", $email))
 		if ($test_mx) {
-			list($username, $domain) = split("@", $email);
+			list($username, $domain) = explode("@", $email);
 			return getmxrr($domain, $mxrecords);
 		}
 		else return true;
@@ -701,38 +701,6 @@ function strip_xss($val) {
 		}
 	}
 	return $val;
-}
-function cleanGlobals(){
-	if ($_GET) {
-		foreach ($_GET as $k => $v) {
-			$_GET[$k] = mysql_real_escape_string(strip_xss(trim(stripslashes ($v))));
-			$length = strlen($v);
-			if ($length > 20) $v="";
-			if (is_numeric ($v)) {
-				$length = strlen($v);
-				if ($length > 11 ) $_GET[$k]="";
-				$_GET[$k] = intval ($v);
-			}
-		}
-	}
-	if ($_POST) {
-		foreach ($_POST as $k => $v) {
-			$_POST[$k] = mysql_real_escape_string(strip_xss(trim(stripslashes ($v))));
-			$length = strlen($v);
-			if ($length > 20)$_POST[$k]="";
-			if (is_numeric ($v)) {
-				$length = strlen($v);
-				if ($length > 11) $_POST[$k]="";
-				$_POST[$k] = intval ($v);
-			}
-		}
-	}
-	if ($_COOKIE) {
-		foreach ($_COOKIE as $k => $v) {
-			$_COOKIE[$k] = strip_xss(trim(stripslashes ($v)));
-			if (is_numeric ($v)) $_COOKIE[$k] = intval ($v);
-		}
-	}
 }
 function safe_redirect($url, $exit=true) {
 
