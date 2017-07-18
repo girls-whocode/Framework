@@ -5,7 +5,7 @@
 	define('BRN', "<br />\n");
 
 # plg_visitor
-	echo "There has been ".hitcounter ()." hits to this site. You are using ".browserName." ver ".browserVer." on ".platformFamily." ".(is64bit ? "64 bit" : "32 bit")." from ".getIP().BRN;
+	echo "There has been ".hitcounter ()." ".pluralize (hitcounter (), 'hit', 'hits')." to this site. You are using ".browserName." ver ".browserVer." on ".platformFamily." ".(is64bit ? "64 bit" : "32 bit")." from ".getIP().BRN;
 
 # plg_dump
 	$arr = array("Defined Variables"=>get_defined_vars(), "Defined Constants"=>get_defined_constants());
