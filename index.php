@@ -15,9 +15,9 @@ $serialnumber = clean_number('SRV293-26731-853-US170711');
 $otherCountries = clean_number('1.542.765,23');
 $usCurrency = clean_number('$5,235.95');
 
-echo $serialnumber; #
-echo $otherCountries; #
-echo $usCurrency; #
+echo $serialnumber.BRN; #
+echo $otherCountries.BRN; #
+echo $usCurrency.BRN; #
 
 # plg_system
 	echo 'Framework Functions:'.BRN;
