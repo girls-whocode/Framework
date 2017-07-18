@@ -19,10 +19,10 @@ located inside the plg_ directory to false.
 For example:
 ```PHP
 $config = array(
-    "load"=>'TRUE',
-    "directory"=>'plg_sample',
-    "helper"=>'plg_helper'
-)
+	"LOAD"=>"TRUE",
+	"NAME"=>"SYSTEM",
+	"VERSION"=>"1.4.2"
+);
 ```
 
 ## Getting Started
