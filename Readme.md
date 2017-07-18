@@ -5,7 +5,9 @@ project. If you would like to contribute, please contact me, I will add your inf
 start a complete Usergroup, plugin repository, and documentation system on a website once this project gets traction. If 
 you have any commits, please don't hesitate to leave a commit, or contact me.
 
-This **Framework**, although does not have an actual name as of yet. Is the beginning work of several functions, and 
+DIABLOS is the Anagram for "Does It All By Leveraging Open Source". The name came from my wife, who also started it by 
+Does it all by learning objectives, but after some discussion and working through what this Framework does, we agreed on 
+adding an "S" to DIABLO, and changing it to leveraging open source. Is the beginning work of several functions, and 
 scripts compiled into one easy to use call. This framework is one of the simplest frameworks you'll ever use. This 
 system allows you to build a complete system with one call on your index page. 
 
