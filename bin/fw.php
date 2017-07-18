@@ -65,9 +65,15 @@
 			$message .= 'looking for file <span style="color: blue;">' . $plgDir . DS . 'plg_' . $plgName . '.php' . '</span> is ' . (file_exists ($plgDir . DS . 'plg_' . $plgName . '.php') ? '<span style="color: green;">found</span>' : '<span style="color: red;">not found</span>');
 			SysError ('warning', $message, '100');
 		}
-
-		if (file_exists ($plgDir.DS.'plg_'.$plgName.'.php')) {
-			include ($plgDir . DS . 'plg_' . $plgName . '.php');
+		else {
+			if (! file_exists ($plgDir.DS.'plg_'.$plgName.'_config.php')) {
+				$message = 'Loading plugin <span style="color: blue;">' . $plgName . '</span> from the Plugin Directory <span style="color: blue;">' . $plgDir . '</span> ';
+				$message .= 'looking for file <span style="color: blue;">' . $plgDir . DS . 'plg_' . $plgName . '_config.php' . '</span> is ' . (file_exists ($plgDir . DS . 'plg_' . $plgName . '_config.php') ? '<span style="color: green;">found</span>' : '<span style="color: red;">not found</span>');
+				SysError ('critical', $message, '101');
+			} else {
+				include ($plgDir.DS.'plg_'.$plgName.'_config.php');
+			}
+			if ($config['LOAD'] == 'TRUE') include ($plgDir.DS.'plg_'.$plgName.'.php');
 		}
 	}
 	function SysError($level, $message, $errno){

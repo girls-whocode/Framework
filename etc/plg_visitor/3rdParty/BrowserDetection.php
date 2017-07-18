@@ -1,5 +1,5 @@
 <?php
-
+	defined('SITEKEY') or die('Direct access to this file is not allowed.');
 /**
  * Browser detection class file.
  * This file contains everything required to use the BrowserDetection class.

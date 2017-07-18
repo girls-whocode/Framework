@@ -1,4 +1,5 @@
 <?php
+	defined('SITEKEY') or die('Direct access to this file is not allowed.');
 	require_once('3rdParty'.DS.'BrowserDetection.php');
 	$browser = new BrowserDetection();
 

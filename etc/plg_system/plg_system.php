@@ -1,4 +1,5 @@
 <?php
+defined('SITEKEY') or die('Direct access to this file is not allowed.');
 /**
  *       PHP QuickFunctions
  *           Designed and copyprotected by Jessica Brown

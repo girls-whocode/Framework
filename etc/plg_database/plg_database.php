@@ -1,4 +1,5 @@
 <?php
+defined('SITEKEY') or die('Direct access to this file is not allowed.');
 /**
  *   Custom MySQL Class
  *       Designed by Jessica Brown, forked from another unknown author project

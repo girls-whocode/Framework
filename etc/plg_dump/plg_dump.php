@@ -1,4 +1,5 @@
 <?php
+	defined('SITEKEY') or die('Direct access to this file is not allowed.');
 	function dump(&$var, $autohide = TRUE, $collaspe = TRUE) {
 		$format = array('N'=>"\n", 'T'=>"\t", 'BR'=>"<br />", 'BRN'=>"<br />\n");
 		$css  = ".content-wrapper {font-family:Verdana, Arial; font-size:12px; width: 100%; list-style:none; margin:0; padding:0; outline:0; text-decoration:none; box-sizing:border-box!important; -webkit-box-sizing:border-box!important;-moz-box-sizing:border-box!important;-ms-box-sizing:border-box!important}";
