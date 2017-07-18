@@ -268,6 +268,7 @@ function remainingTime($time){
 	$hr  = floor(($rem % 86400) / 3600);
 	$min = floor(($rem % 3600) / 60);
 	$sec = ($rem % 60);
+	$output = '';
 	if($year) $output .= $year.pluralize($year, ' year ', ' years ');
 	if($month) $output .= $month.pluralize($month, ' month ', ' months ');
 	if($week) $output .= $week.pluralize($week, ' week ', ' weeks ');
@@ -304,6 +305,7 @@ function string_continue($text, $len=80) {
 	return $string;
 }
 function string_trim($text, $count){
+	$trimed = '';
 	$count = $count - 1;
 	$string = explode(" ", str_replace("  ", " ", $text));
 	for ($wordCounter = 0; $wordCounter <= $count; $wordCounter++ ){
@@ -865,7 +867,7 @@ function is_numeric_array($array) {
 		else return true;
 }
 function array_changecase($array, $case = 'lower'){
-	return array_change_key_case($array, ($c=='upper') ? CASE_UPPER : CASE_LOWER);
+	return array_change_key_case($array, ($case == 'upper') ? CASE_UPPER : CASE_LOWER);
 }
 
 # DATABASE FUNCTIONS
