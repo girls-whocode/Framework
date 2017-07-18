@@ -91,12 +91,12 @@ function decimal_to_fraction($float) {
 	return ($whole == 0 ? '' : $whole) . " " . ($roundedDecimal * $denom) . "/" . $denom;
 }
 function fraction_to_decimal ($fraction) {
-	$wholenum = array_map('trim',explode(" ", $fraction));
+	$wholenum = array_map('trim', explode(" ", $fraction));
 	if (count($wholenum) == 1) $wholenum = ''; else $wholenum = $wholenum[0];
 	$numbers = explode("/", $fraction);
 	if ($numbers[0] >= $numbers[1]) {
 		$wholenum = floor($numbers[0] / $numbers[1]);
-		$decimal = ($numbers[0] - ($numbers[1] * $wholenum)) / $numbers[1];
+		$decimal = ($numbers[0] - ($numbers[0] * $wholenum)) / $numbers[1];
 	}
 	else {
 		$decimal = $numbers[0] / $numbers[1];
