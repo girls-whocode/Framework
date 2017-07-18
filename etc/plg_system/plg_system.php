@@ -63,14 +63,6 @@ The rights granted under, and the subject matter referenced, in this License wer
  */
 
 # NUMBER FUNCTIONS
-/**
- *   Clean Number(mixed $string)
- *       Clean Number will strip out any non decimal characters and return only numeric
- *       This is NOT a string to number conversion
- *
- *   Example:
- *       $string = clean_number('15fgt765@*.23'); // returns '15765.23'
- */
 function clean_number($string) {
 	return preg_replace("/[^0-9.,]+/", "", $string);
 }
@@ -95,7 +87,7 @@ function fraction_to_decimal ($fraction) {
 	$wholenum = explode(" ", $fraction);
 	var_dump($wholenum);
 	if (count($wholenum) == 1) {
-		$wholenum = '';
+		$wholenumber = '';
 		$numbers = explode("/", $fraction);
 		if ($numbers[0] >= $numbers[1]) {
 			$wholenum = floor($numbers[0] / $numbers[1]);
@@ -119,7 +111,7 @@ function fraction_to_decimal ($fraction) {
 	}
 
 	$cleaned = (explode(".", $decimal));
-	$return = ($wholenumber != '' ? $wholenumber : '0').'.'.$cleaned[1];
+	$return = (isset($wholenumber) ? $wholenumber : '0').'.'.$cleaned[1];
 	return $return;
 }
 function is_whole_number($num) {
@@ -411,7 +403,8 @@ function getCloud($data = array(), $minFontSize = 12, $maxFontSize = 30){
 	$spread == 0 && $spread = 1;
 	foreach($data as $tag => $count) {
 		$size = $minFontSize + ($count - $minimumCount) * ( $maxFontSize - $minFontSize ) / $spread;
-		$cloudTags[] = '<a style="font-size: '.floor( $size ).'px'.'" class="tag_cloud" href="#" title="\''.$tag.'\' returned a count of '.$count.'">'.htmlspecialchars(stripslashes($tag)).'</a>';
+		$size = $size.'px';
+		$cloudTags[] = '<a style="font-size: '.floor( $size ).'" class="tag_cloud" href="#" title="\''.$tag.'\' returned a count of '.$count.'">'.htmlspecialchars(stripslashes($tag)).'</a>';
 	}
 	return join( "\n", $cloudTags ) . "\n";
 }
