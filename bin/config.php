@@ -15,4 +15,5 @@
 	define('BINDIR', 'bin');
 	define('ETCDIR', 'etc');
 	define('SYSDIR', 'system');
+	define('DATADIR', SYSDIR.DS.'data');
 	define('DS', DIRECTORY_SEPARATOR);

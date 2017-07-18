@@ -789,6 +789,17 @@ function autoglobals(){
 		}
 	}
 }
+function hitcounter(){
+	$filename = DATADIR.DS.'count.log';
+	$datei = fopen($filename,"r");
+	$count = fgets($datei,1000);
+	fclose($datei);
+	$count = $count + 1 ;
+	$datei = fopen($filename,"w");
+	fwrite($datei, $count);
+	fclose($datei);
+	return $count;
+}
 
 # IMAGE FUNCTIONS
 function resize_image($filename, $tmpname, $xmax, $ymax){
