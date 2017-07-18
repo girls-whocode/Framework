@@ -5,11 +5,19 @@
 	define('BRN', "<br />\n");
 
 # plg_visitor
-	echo "There has been ".hitcounter ()." ".pluralize (hitcounter (), 'hit', 'hits')." to this site. You are using ".browserName." ver ".browserVer." on ".platformFamily." ".(is64bit ? "64 bit" : "32 bit")." from ".getIP().BRN;
+	#echo "There has been ".hitcounter ()." ".pluralize (hitcounter (), 'hit', 'hits')." to this site. You are using ".browserName." ver ".browserVer." on ".platformFamily." ".(is64bit ? "64 bit" : "32 bit")." from ".getIP().BRN;
 
 # plg_dump
-	$arr = array("Defined Variables"=>get_defined_vars(), "Defined Constants"=>get_defined_constants());
-	echo dump($arr, TRUE, TRUE).BRN;
+	#$arr = array("Defined Variables"=>get_defined_vars(), "Defined Constants"=>get_defined_constants());
+	#echo dump($arr, TRUE, TRUE).BRN;
+
+$serialnumber = clean_number('SRV293-26731-853-US170711');
+$otherCountries = clean_number('1.542.765,23');
+$usCurrency = clean_number('$5,235.95');
+
+echo $serialnumber; #
+echo $otherCountries; #
+echo $usCurrency; #
 
 # plg_system
 	echo 'Framework Functions:'.BRN;
@@ -32,3 +40,5 @@
 	echo BR.BRN;
 	echo 'echo AddressToPoints (\'10 Fountain Square, Cincinnati, OH 45202\')<span style="color: orange; font-style: italic"># will output '.AddressToPoints ('10 Fountain Square, Cincinnati, OH 45202').'</span>'.BRN;
 	echo BR.BRN;
+	echo 'Date Functions:'.BR.BRN;
+	echo days_month('2', '2014');
