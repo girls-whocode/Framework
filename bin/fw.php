@@ -16,8 +16,15 @@
     		require_once ("install/install.php");
 	    }
 	    else {
-    		SysError ('critical', 'No config file was found and the installation file does not exists, please reinstall framework', '200');
+    		SysError ('critical', 'No config file was found and the installation file does not exists, please reinstall framework', 'fw2000');
 	    }
+    }
+
+    if (file_exists (SYSDIR.DS.'system.php')) {
+		require(SYSDIR.DS.'system.php');
+    }
+    else {
+	    SysError ('critical', 'System file was found, please reinstall framework', 'fw1001');
     }
 
     # Check the environment
