@@ -289,21 +289,24 @@ function remainingTime($time){
 	return $output;
 }
 function secstostr($secs) {
-	if($secs >= 86400){
-		$days = floor($secs/86400);
-		$secs=$secs%86400;
+	if($secs >= 86400) {
+		$days = floor($secs / 86400);
+		$secs = $secs % 86400;
 		$r = $days.pluralize($days, ' day', ' days');
 	}
-	if($secs >= 3600){
+	if($secs >= 3600) {
+		$r = (isset($r) ? $r : '');
 		$hours = floor($secs/3600);
-		$secs = $secs%3600;
+		$secs = $secs % 3600;
 		$r .= $hours.pluralize($hours, ' hour', ' hours');
 	}
-	if($secs >= 60){
+	if($secs >= 60) {
+		$r = (isset($r) ? $r : '');
 		$minutes = floor($secs/60);
-		$secs=$secs%60;
-		$r.=$minutes.pluralize($minutes, ' minute', ' minutes');
+		$secs = $secs % 60;
+		$r .= $minutes.pluralize($minutes, ' minute', ' minutes');
 	}
+	$r = (isset($r) ? $r : '');
 	$r .= $secs.pluralize($secs, ' second', ' seconds');
 	return $r;
 }
