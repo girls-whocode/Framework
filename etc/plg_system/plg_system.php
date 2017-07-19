@@ -320,6 +320,7 @@ function string_trim($text, $count){
 	$trimed = '';
 	$count = $count - 1;
 	$string = explode(" ", str_replace("  ", " ", $text));
+	if ($count > count($string)) SysError ('warning', 'Using string_trim has a count of more then the number of words', '101');
 	for ($wordCounter = 0; $wordCounter <= $count; $wordCounter++ ){
 		$trimed .= $string[$wordCounter];
 		if ($wordCounter < $count) $trimed .= " ";

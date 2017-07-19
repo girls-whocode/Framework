@@ -33,12 +33,12 @@
 	echo 'echo AddressToPoints (\'10 Fountain Square, Cincinnati, OH 45202\')<span style="color: orange; font-style: italic"># will output '.AddressToPoints ('10 Fountain Square, Cincinnati, OH 45202').'</span>'.BRN;
 	echo BR.BRN;
 	echo 'Date Functions:'.BR.BRN;
-	echo days_month('2', '2014').BR;
-	echo generate_calendar('2017', '01').BR;
-	echo minutestohours(494).BR;
-	echo _ago(45).BR;
-	echo remainingTime(date('Y-m-d', strtotime('+5 years +4 month +2 weeks +5 days +18 hours +43 minutes +31 seconds'))).BR;
-	echo secstostr(269).BR;
+	echo 'echo days_month(\'2\', \'2014\');<span style="color: orange; font-style: italic;"># will output '.days_month('2', '2014').'</span>'.BR;
+	echo 'echo generate_calendar(\'2017\', \'01\');<span style="color: orange; font-style: italic;"># will output '.BRN.generate_calendar('2017', '01').'</span>'.BR;
+	echo 'echo minutestohours(494);<span style="color: orange; font-style: italic;"># will output '.minutestohours(494).'</span>'.BR;
+	echo '_ago(45);<span style="color: orange; font-style: italic;"># will output '._ago(45).'</span>'.BR;
+	echo 'remainingTime(date(\'Y-m-d\', strtotime(\'+5 years +4 month +2 weeks +5 days +18 hours +43 minutes +31 seconds\')));<span style="color: orange; font-style: italic;"># will output '.remainingTime(date('Y-m-d', strtotime('+5 years +4 month +2 weeks +5 days +18 hours +43 minutes +31 seconds'))).'</span>'.BR;
+	echo 'secstostr(269);<span style="color: orange; font-style: italic;"># will output '.secstostr(269).'</span>'.BR;
 	echo BR.BRN;
 	echo 'String Functions:'.BR.BRN;
 	echo string_continue('Today is the day for all good men to come to the aid of their country.', 30).BR;
