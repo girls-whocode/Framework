@@ -42,7 +42,7 @@
 	echo BR.BRN;
 	echo 'String Functions:'.BR.BRN;
 	echo string_continue('Today is the day for all good men to come to the aid of their country.', 30).BR;
-	echo string_trim('Today is the day for all good men to come to the aid of their country.', 30).BR;
+	echo string_trim('Today is the day for all good men to come to the aid of their country.', 5).BR;
 	echo string_mid_trim('Today is the day for all good men to come to the aid of their country.', 30).BR;
 	echo random_passwd(12).BR;
 	echo pluralize(3, 'box', 'boxes').BR;
