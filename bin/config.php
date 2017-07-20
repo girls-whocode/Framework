@@ -13,7 +13,7 @@
 		(!defined($defkey) ? define((strtoupper($config["DEFKEY"]) == 'UPPER' ? strtoupper($defkey) : strtolower($defkey)), $defval) : "");
     }
 
-    # These settings should not be changed:
+    # These settings should not be changed unless they conflict with your current project
 	$rootPath = str_replace(basename(dirname(__FILE__)), '', basename(dirname(__FILE__)));
 	define('BINDIR', 'bin');
 	define('ETCDIR', 'etc');

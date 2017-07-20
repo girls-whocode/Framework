@@ -3,7 +3,7 @@ defined('SITEKEY') or die('Direct access to this file is not allowed.');
 
 # NUMBER FUNCTIONS
 function clean_number($string) {
-	return preg_replace("/[^0-9.,]+/", "", $string);
+	return preg_replace("/[^0-9.,-]+/", "", $string);
 }
 function decimal_to_fraction($float) {
 	$float = clean_number($float);
