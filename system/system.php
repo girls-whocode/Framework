@@ -42,6 +42,7 @@ function clean_number($string, $flags='') {
 	echo "Exited IF is_array".BR;
 	$pattern = "/[^0-9".(!$comma ? "," : "").(!$decimal ? "." : "").(!$minus ? "-" : "")."]+/";
 	echo "Pattern to return :".$pattern.BR;
+	echo "Function completed".BR.BR.BR;
 	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {
