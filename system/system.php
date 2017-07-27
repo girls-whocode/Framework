@@ -11,32 +11,29 @@ function clean_number($string, $flags='') {
 		echo "parsedFlags is array...".BR;
 		foreach ($parsedFlags as $explodedflag) {
 			echo "explodedflag is returning :".$explodedflag.BR;
-			foreach ($explodedflag as $flag) {
-				echo "flag is returning :".$flag.BR;
-				if (in_array ($flag, $allowed)) {
-					switch ($flag) {
-						case strtoupper ('NO_COMMA'):
-							echo 'NO COMMA'.BR;
-							$comma = true;
-							break;
-						case strtoupper ('NO_DECIMAL'):
-							echo 'NO DECIMAL'.BR;
-							$decimal = true;
-							break;
-						case strtoupper ('NO_MINUS'):
-							echo 'NO MINUS'.BR;
-							$minus = true;
-							break;
-						case strtoupper ('NUMBERS_ONLY'):
-							echo 'NUMBER ONLY'.BR;
-							$numbers = true;
-							break;
-					}
-					echo "Passed Switch".BR;
+			echo "flag is returning :".$flag.BR;
+			if (in_array ($flag, $allowed)) {
+				switch ($flag) {
+					case strtoupper ('NO_COMMA'):
+						echo 'NO COMMA'.BR;
+						$comma = true;
+						break;
+					case strtoupper ('NO_DECIMAL'):
+						echo 'NO DECIMAL'.BR;
+						$decimal = true;
+						break;
+					case strtoupper ('NO_MINUS'):
+						echo 'NO MINUS'.BR;
+						$minus = true;
+						break;
+					case strtoupper ('NUMBERS_ONLY'):
+						echo 'NUMBER ONLY'.BR;
+						$numbers = true;
+						break;
 				}
-				echo "Exited IF in_array".BR;
+				echo "Passed Switch".BR;
 			}
-			echo "Exited explodedFlag".BR;
+			echo "Exited IF in_array".BR;
 		}
 		echo "Exited parsedFlags".BR;
 	}
