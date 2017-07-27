@@ -6,29 +6,42 @@ function clean_number($string, $flags='') {
 	$comma = $decimal = $minus = $numbers = false;
 	$parsedFlags = explode(' ', $flags);
 	$allowed = array('NO_COMMA', 'NO_DECIMAL', 'NO_MINUS', 'NUMBERS_ONLY');
-#	if (is_array ($parsedFlags)) {
+	if (is_array ($parsedFlags)) {
+		echo "parsedFlags is array...".BR;
 		foreach ($parsedFlags as $explodedflag) {
+			echo "explodedflag is returning :".$explodedflag.BR;
 			foreach ($explodedflag as $flag) {
+				echo "flag is returning :".$flag.BR;
 				if (in_array ($flag, $allowed)) {
 					switch ($flag) {
 						case strtoupper ('NO_COMMA'):
+							echo 'NO COMMA'.BR;
 							$comma = true;
 							break;
 						case strtoupper ('NO_DECIMAL'):
+							echo 'NO DECIMAL'.BR;
 							$decimal = true;
 							break;
 						case strtoupper ('NO_MINUS'):
+							echo 'NO MINUS'.BR;
 							$minus = true;
 							break;
 						case strtoupper ('NUMBERS_ONLY'):
+							echo 'NUMBER ONLY'.BR;
 							$numbers = true;
 							break;
 					}
+					echo "Passed Switch".BR;
 				}
+				echo "Exited IF in_array".BR;
 			}
+			echo "Exited explodedFlag".BR;
 		}
-#	}
+		echo "Exited parsedFlags".BR;
+	}
+	echo "Exited IF is_array".BR;
 	$pattern = "/[^0-9".(!$comma ? "," : "").(!$decimal ? "." : "").(!$minus ? "-" : "")."]+/";
+	echo "Pattern to return :".$pattern.BR;
 	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {
