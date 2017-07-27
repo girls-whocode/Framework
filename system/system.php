@@ -6,7 +6,7 @@ function clean_number($string, $flags='') {
 	$comma = $decimal = $minus = $numbers = false;
 	$parsedFlags = explode(' ', $flags);
 	$allowed = array('NO_COMMA', 'NO_DECIMAL', 'NO_MINUS', 'NUMBERS_ONLY');
-	if (is_array ($parsedFlags)) {
+#	if (is_array ($parsedFlags)) {
 		foreach ($parsedFlags as $explodedflag) {
 			foreach ($explodedflag as $flag) {
 				if (in_array ($flag, $allowed)) {
@@ -27,7 +27,7 @@ function clean_number($string, $flags='') {
 				}
 			}
 		}
-	}
+#	}
 	$pattern = "/[^0-9".(!$comma ? "," : "").(!$decimal ? "." : "").(!$minus ? "-" : "")."]+/";
 	return preg_replace ($pattern, "", $string);
 }
