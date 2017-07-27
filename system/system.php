@@ -2,8 +2,31 @@
 defined('SITEKEY') or die('Direct access to this file is not allowed.');
 
 # NUMBER FUNCTIONS
-function clean_number($string) {
-	return preg_replace("/[^0-9.,-]+/", "", $string);
+function clean_number($string, $flags='') {
+	$parsedFlags = explode(' ', $flags);
+	$allowed = array('NO_COMMA', 'NO_DECIMAL', 'NO_MINUS', 'NUMBERS_ONLY');
+	foreach ($parsedFlags as $explodedflag) {
+		foreach ($explodedflag as $flag) {
+			if (in_array ($flag, $allowed)) {
+				switch ($flag) {
+					case strtoupper ('NO_COMMA'):
+						$comma = true;
+						break;
+					case strtoupper ('NO_DECIMAL'):
+						$decimal = true;
+						break;
+					case strtoupper ('NO_MINUS'):
+						$minus = true;
+						break;
+					case strtoupper ('NUMBERS_ONLY'):
+						$numbers = true;
+						break;
+				}
+			}
+		}
+	}
+	$pattern = "/[^0-9".(!$comma ? "," : "").(!$decimal ? "." : "").(!$minus ? "-" : "")."]+/";
+	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {
 	$float = clean_number($float);
