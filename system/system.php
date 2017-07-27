@@ -12,8 +12,8 @@ function clean_number($string, $flags='') {
 		foreach ($parsedFlags as $explodedflag) {
 			echo "explodedflag is returning :".$explodedflag.BR;
 			echo "flag is returning :".$flag.BR;
-			if (in_array ($flag, $allowed)) {
-				switch ($flag) {
+			if (in_array ($explodedflag, $allowed)) {
+				switch ($explodedflag) {
 					case strtoupper ('NO_COMMA'):
 						echo 'NO COMMA'.BR;
 						$comma = true;

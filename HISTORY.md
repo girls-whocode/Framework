@@ -1,3 +1,6 @@
+## 0.2.1 - 2017-07-27
+* Added clean_number function FLAGS
+
 ## 0.2.0 - 2017-07-19
 #### Changed
 * Removed System Functions from Plugins to System folder

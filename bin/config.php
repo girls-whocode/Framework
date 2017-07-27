@@ -4,8 +4,8 @@
         "DEFKEY"=>"upper", # Options are upper or lower
         "SITEKEY"=>"hdgjf6yehtrsbe5sgernys3ser674685tyudjfyty8tr6my5t6iunt6i8my8d54n68jm57mi", # Place a random string of letters and number here
 		"LOADPLUGINS"=>TRUE,
-	    "VERSION"=>"0.2.0",
-	    "BUILD"=>"55",
+	    "VERSION"=>"0.2.1",
+	    "BUILD"=>"63",
 	    "CODENAME"=>"Achelois",
     ];
 
