@@ -6,22 +6,24 @@ function clean_number($string, $flags='') {
 	$comma = $decimal = $minus = $numbers = false;
 	$parsedFlags = explode(' ', $flags);
 	$allowed = array('NO_COMMA', 'NO_DECIMAL', 'NO_MINUS', 'NUMBERS_ONLY');
-	foreach ($parsedFlags as $explodedflag) {
-		foreach ($explodedflag as $flag) {
-			if (in_array ($flag, $allowed)) {
-				switch ($flag) {
-					case strtoupper ('NO_COMMA'):
-						$comma = true;
-						break;
-					case strtoupper ('NO_DECIMAL'):
-						$decimal = true;
-						break;
-					case strtoupper ('NO_MINUS'):
-						$minus = true;
-						break;
-					case strtoupper ('NUMBERS_ONLY'):
-						$numbers = true;
-						break;
+	if (is_array ($parsedFlags)) {
+		foreach ($parsedFlags as $explodedflag) {
+			foreach ($explodedflag as $flag) {
+				if (in_array ($flag, $allowed)) {
+					switch ($flag) {
+						case strtoupper ('NO_COMMA'):
+							$comma = true;
+							break;
+						case strtoupper ('NO_DECIMAL'):
+							$decimal = true;
+							break;
+						case strtoupper ('NO_MINUS'):
+							$minus = true;
+							break;
+						case strtoupper ('NUMBERS_ONLY'):
+							$numbers = true;
+							break;
+					}
 				}
 			}
 		}
