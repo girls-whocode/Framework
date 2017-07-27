@@ -4,7 +4,7 @@ defined('SITEKEY') or die('Direct access to this file is not allowed.');
 # NUMBER FUNCTIONS
 function clean_number($string, $flags='') {
 	$comma = $decimal = $minus = true;
-	$parsedFlags = (count(explode(' ', $flags)) > 1 ? explode(' ', $flags) : $flags);
+	$parsedFlags = (count(explode(' ', $flags)) > 0 ? explode(' ', $flags) : $flags);
 	$allowed = array('NO_COMMA', 'NO_DECIMAL', 'NO_MINUS', 'NUMBERS_ONLY');
 
 	if (is_array ($parsedFlags)) {
