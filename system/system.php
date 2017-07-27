@@ -11,22 +11,21 @@ function clean_number($string, $flags='') {
 		echo "parsedFlags is array...".BR;
 		foreach ($parsedFlags as $explodedflag) {
 			echo "explodedflag is returning :".$explodedflag.BR;
-			echo "flag is returning :".$flag.BR;
 			if (in_array ($explodedflag, $allowed)) {
-				switch ($explodedflag) {
-					case strtoupper ('NO_COMMA'):
+				switch (strtoupper ($explodedflag)) {
+					case 'NO_COMMA':
 						echo 'NO COMMA'.BR;
 						$comma = true;
 						break;
-					case strtoupper ('NO_DECIMAL'):
+					case 'NO_DECIMAL':
 						echo 'NO DECIMAL'.BR;
 						$decimal = true;
 						break;
-					case strtoupper ('NO_MINUS'):
+					case 'NO_MINUS':
 						echo 'NO MINUS'.BR;
 						$minus = true;
 						break;
-					case strtoupper ('NUMBERS_ONLY'):
+					case 'NUMBERS_ONLY':
 						echo 'NUMBER ONLY'.BR;
 						$numbers = true;
 						break;
