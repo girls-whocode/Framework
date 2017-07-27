@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="">
+    <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="Update ver 0.2.1 Beta (Build 65)&#10;FLAGS to clean_number function - Completed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HISTORY.md" afterPath="$PROJECT_DIR$/HISTORY.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/config.php" afterPath="$PROJECT_DIR$/bin/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/system.php" afterPath="$PROJECT_DIR$/system/system.php" />
     </list>
@@ -97,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="system.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="system.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/system/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="23">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="n#decimal_to_fraction#0;n#!!top" expanded="false" />
                 <element signature="n#fraction_to_decimal#0;n#!!top" expanded="false" />
@@ -146,14 +147,14 @@
                 <element signature="n#is_numeric_array#0;n#!!top" expanded="false" />
                 <element signature="n#array_changecase#0;n#!!top" expanded="false" />
                 <element signature="n#SQLclean#0;n#!!top" expanded="false" />
-                <marker date="1501156515145" expanded="true" signature="7565:7571" ph=" " />
-                <marker date="1501156515145" expanded="true" signature="7588:7594" ph=" " />
+                <marker date="1501157445012" expanded="true" signature="7193:7199" ph=" " />
+                <marker date="1501157445012" expanded="true" signature="7216:7222" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -167,8 +168,8 @@
         <entry file="file://$PROJECT_DIR$/HISTORY.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="184">
-                <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -233,9 +234,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php" />
-        <option value="$PROJECT_DIR$/HISTORY.md" />
         <option value="$PROJECT_DIR$/system/system.php" />
         <option value="$PROJECT_DIR$/bin/config.php" />
+        <option value="$PROJECT_DIR$/HISTORY.md" />
       </list>
     </option>
   </component>
@@ -578,42 +579,7 @@
       <workItem from="1500034868816" duration="4251000" />
       <workItem from="1500039643184" duration="108713000" />
       <workItem from="1500648944786" duration="3473000" />
-      <workItem from="1500953279449" duration="17253000" />
-    </task>
-    <task id="LOCAL-00013" summary="Update ver 0.1 Beta (Build 10)&#10;plg_system examples">
-      <created>1500318223563</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1500318223563</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update ver 0.1.1 Beta (Build 11)&#10;Added GetAddressFromPoints Function&#10;plg_system examples">
-      <created>1500318645831</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1500318645831</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Update ver 0.1.1 Beta (Build 11)&#10;Added GetAddressFromPoints Function&#10;plg_system examples">
-      <created>1500319136500</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1500319136500</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Update ver 0.1.1 Beta (Build 11)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500321380375</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1500321380375</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Update ver 0.1.1 Beta (Build 11)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500321588500</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1500321588500</updated>
+      <workItem from="1500953279449" duration="18325000" />
     </task>
     <task id="LOCAL-00018" summary="Update ver 0.1.1 Beta (Build 14)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
       <created>1500322075104</created>
@@ -923,11 +889,46 @@
       <option name="project" value="LOCAL" />
       <updated>1501156418414</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Update ver 0.2.1 Beta (Build 62)&#10;BugFix FLAGS to clean_number function (Debugging...)">
+      <created>1501156531659</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1501156531659</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Update ver 0.2.1 Beta (Build 62)&#10;BugFix FLAGS to clean_number function (Debugging...)">
+      <created>1501156775413</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1501156775413</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Update ver 0.2.1 Beta (Build 62)&#10;BugFix FLAGS to clean_number function (Debugging...)">
+      <created>1501156812497</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1501156812497</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Update ver 0.2.1 Beta (Build 64)&#10;BugFix FLAGS to clean_number function">
+      <created>1501157175152</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1501157175152</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Update ver 0.2.1 Beta (Build 64)&#10;BugFix FLAGS to clean_number function">
+      <created>1501157382869</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1501157382869</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133690000" />
+    <option name="totallyTimeSpent" value="134762000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -941,7 +942,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5020432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -976,7 +977,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="2000" />
-    <MESSAGE value="Update ver 0.1.1 Beta (Build 19)&#10;Added Hit Counter Function to the System Plugins" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Bug Fixes" />
@@ -1001,7 +1001,8 @@
     <MESSAGE value="Update ver 0.2.1 Beta (Build 58)&#10;BugFix FLAGS to clean_number function" />
     <MESSAGE value="Update ver 0.2.1 Beta (Build 58)&#10;BugFix FLAGS to clean_number function (Debugging...)" />
     <MESSAGE value="Update ver 0.2.1 Beta (Build 62)&#10;BugFix FLAGS to clean_number function (Debugging...)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.2.1 Beta (Build 62)&#10;BugFix FLAGS to clean_number function (Debugging...)" />
+    <MESSAGE value="Update ver 0.2.1 Beta (Build 64)&#10;BugFix FLAGS to clean_number function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.2.1 Beta (Build 64)&#10;BugFix FLAGS to clean_number function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1416,6 +1417,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1276">
+          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+          <folding>
+            <element signature="e#6#147#0#PHP" expanded="false" />
+            <marker date="1501092342470" expanded="true" signature="2936:2965" ph="SELECT * FRO... TABLE 1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/fw.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
@@ -1437,32 +1449,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1276">
-          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#147#0#PHP" expanded="true" />
-            <marker date="1501092342470" expanded="true" signature="2936:2965" ph="SELECT * FRO... TABLE 1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HISTORY.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/system/system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="n#decimal_to_fraction#0;n#!!top" expanded="false" />
             <element signature="n#fraction_to_decimal#0;n#!!top" expanded="false" />
@@ -1507,17 +1516,9 @@
             <element signature="n#is_numeric_array#0;n#!!top" expanded="false" />
             <element signature="n#array_changecase#0;n#!!top" expanded="false" />
             <element signature="n#SQLclean#0;n#!!top" expanded="false" />
-            <marker date="1501156515145" expanded="true" signature="7565:7571" ph=" " />
-            <marker date="1501156515145" expanded="true" signature="7588:7594" ph=" " />
+            <marker date="1501157445012" expanded="true" signature="7193:7199" ph=" " />
+            <marker date="1501157445012" expanded="true" signature="7216:7222" ph=" " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -9,7 +9,6 @@ function clean_number($string, $flags='') {
 
 	if (is_array ($parsedFlags)) {
 		foreach ($parsedFlags as $explodedflag) {
-			echo "explodedflag is returning :".$explodedflag.BR;
 			if (in_array ($explodedflag, $allowed)) {
 				switch (strtoupper ($explodedflag)) {
 					case 'NO_COMMA':
@@ -31,7 +30,6 @@ function clean_number($string, $flags='') {
 		}
 	}
 	$pattern = "/[^0-9".($comma ? "," : "").($decimal ? "." : "").($minus ? "-" : "")."]+/";
-	echo "Pattern to return :".$pattern.BR;
 	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {

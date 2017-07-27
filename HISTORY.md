@@ -1,5 +1,12 @@
 ## 0.2.1 - 2017-07-27
-* Added clean_number function FLAGS
+### Changed
+
+### Added
+* FLAGS to clean_number function
+    * NO_COMMA
+    * NO_MINUS
+    * NO_DECIMAL
+    * NUMBERS_ONLY
 
 ## 0.2.0 - 2017-07-19
 #### Changed
