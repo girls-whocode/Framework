@@ -3,43 +3,33 @@ defined('SITEKEY') or die('Direct access to this file is not allowed.');
 
 # NUMBER FUNCTIONS
 function clean_number($string, $flags='') {
-	$comma = $decimal = $minus = $numbers = false;
+	$comma = $decimal = $minus = $numbers = true;
 	$parsedFlags = (count(explode(' ', $flags)) > 1 ? explode(' ', $flags) : $flags);
 	$allowed = array('NO_COMMA', 'NO_DECIMAL', 'NO_MINUS', 'NUMBERS_ONLY');
 
 	if (is_array ($parsedFlags)) {
-		echo "parsedFlags is array...".BR;
 		foreach ($parsedFlags as $explodedflag) {
 			echo "explodedflag is returning :".$explodedflag.BR;
 			if (in_array ($explodedflag, $allowed)) {
 				switch (strtoupper ($explodedflag)) {
 					case 'NO_COMMA':
-						echo 'NO COMMA'.BR;
-						$comma = true;
+						$comma = flase;
 						break;
 					case 'NO_DECIMAL':
-						echo 'NO DECIMAL'.BR;
-						$decimal = true;
+						$decimal = false;
 						break;
 					case 'NO_MINUS':
-						echo 'NO MINUS'.BR;
-						$minus = true;
+						$minus = false;
 						break;
 					case 'NUMBERS_ONLY':
-						echo 'NUMBER ONLY'.BR;
-						$numbers = true;
+						$numbers = false;
 						break;
 				}
-				echo "Passed Switch".BR;
 			}
-			echo "Exited IF in_array".BR;
 		}
-		echo "Exited parsedFlags".BR;
 	}
-	echo "Exited IF is_array".BR;
-	$pattern = "/[^0-9".(!$comma ? "," : "").(!$decimal ? "." : "").(!$minus ? "-" : "")."]+/";
+	$pattern = "/[^0-9".($comma ? "," : "").($decimal ? "." : "").($minus ? "-" : "")."]+/";
 	echo "Pattern to return :".$pattern.BR;
-	echo "Function completed".BR.BR.BR;
 	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {
