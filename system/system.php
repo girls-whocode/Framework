@@ -13,7 +13,7 @@ function clean_number($string, $flags='') {
 			if (in_array ($explodedflag, $allowed)) {
 				switch (strtoupper ($explodedflag)) {
 					case 'NO_COMMA':
-						$comma = flase;
+						$comma = false;
 						break;
 					case 'NO_DECIMAL':
 						$decimal = false;
