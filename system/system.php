@@ -32,7 +32,7 @@ function clean_number($string, $flags='') {
 	$pattern = "/[^0-9".($comma ? "," : "").($decimal ? "." : "").($minus ? "-" : "")."]+/";
 	return preg_replace ($pattern, "", $string);
 }
-function decimal_to_fraction($float) {
+function decimal_to_fraction($fraction) {
 	$base = floor($fraction);
 	$fraction -= $base;
 	if( $fraction == 0 ) return $base;
