@@ -33,6 +33,23 @@ function clean_number($string, $flags='') {
 	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {
+	$base = floor($fraction);
+	$fraction -= $base;
+	if( $fraction == 0 ) return $base;
+	list($ignore, $numerator) = preg_split('/\./', $fraction, 2);
+	$denominator = pow(10, strlen($numerator));
+	$gcd = gcd($numerator, $denominator);
+	$fraction = ($numerator / $gcd) . '/' . ($denominator / $gcd);
+	if( $base > 0 ) {
+		return $base . ' ' . $fraction;
+	} else {
+		return $fraction;
+	}
+}
+function gcd($a,$b) {
+	return ($a % $b) ? gcd($b,$a % $b) : $b;
+}
+function old_decimal_to_fraction($float) {
 	$denArray = $denom = '';
 	$float = clean_number($float);
 	$whole = floor($float);
