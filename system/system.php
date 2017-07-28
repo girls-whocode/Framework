@@ -106,12 +106,7 @@ function trim_num($num, $digits = 0){
 function roman_numerals($num){
 	$c = 'IVXLCDM';
 	for($a = 5, $b = $s = ''; $num; $b++, $a^=7) {
-		echo $a.BR;
-		for ($o = $num % $a, $num = $num / $a ^ 0; $o--; $s = $c[$o > 2 ? $b + $num - ($num &= -2) + $o = 1 : $b] . $s) {
-			echo $o.BR;
-			echo $a.BR;
-			echo $s.BR;
-		};
+		for (@$o = $num % $a, $num = $num / $a ^ 0; @$o--; @$s = $c[$o > 2 ? $b + $num - ($num &= -2) + $o = 1 : $b] . $s) ;
 	}
 	return $s;
 }
