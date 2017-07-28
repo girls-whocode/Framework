@@ -33,6 +33,7 @@ function clean_number($string, $flags='') {
 	return preg_replace ($pattern, "", $string);
 }
 function decimal_to_fraction($float) {
+	$denom = '';
 	$float = clean_number($float);
 	$whole = floor($float);
 	$decimal = $float - $whole;
@@ -150,18 +151,10 @@ function AddressToPoints($address){
 }
 
 # DATE FUNCTIONS
-/**
- *   Days Month(mixed $month, mixed $year[opt])
- *       Will return the number of days in the month and year given. Year is
- *       only required for determining if leap year for the month of Feb.
- *
- *   Example:
- *       $numofdays = days_month('2', '1998')
- *
- * @param mixed $month
- * @param mixed $year
- * @return mixed
- */
+function isvaliddate($date, $format = 'Y-m-d H:i:s') {
+	$d = DateTime::createFromFormat($format, $date);
+	return $d && $d->format($format) == $date;
+}
 function days_month($month, $year = 'NaN') {
 	if ($year == 'NaN') $year = date('Y');
 	if (!is_whole_number($month)){
