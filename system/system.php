@@ -46,7 +46,7 @@ function decimal_to_fraction($fraction) {
 		return $fraction;
 	}
 }
-function gcd($a,$b) {
+function gcd($a, $b) {
 	return ($a % $b) ? gcd($b,$a % $b) : $b;
 }
 function fraction_to_decimal ($fraction) {
@@ -99,6 +99,16 @@ function ordinalize($num) {
 function parity($num) {
 	return (is_numeric($num)&(!($num&1)));
 }
+function trim_num($num, $digits = 0){
+	$shift = pow(10, $digits);
+	return ((floor($num * $shift)) / $shift);
+}
+function roman_numerals($num){
+	$c='IVXLCDM';
+	for($a=5, $b = $s = ''; $num; $b++, $a^=7)
+	for($o = $num % $a, $num = $num / $a^0; $o--; $s = $c[$o>2 ? $b + $num - ($num &= -2) + $o = 1: $b].$s)
+	return $s;
+}
 
 # ADDRESS/GEOLOCATION
 function getDistanceBetweenPoints($latitude1, $longitude1, $latitude2, $longitude2) {
@@ -147,6 +157,64 @@ function AddressToPoints($address){
 	$latitude = $output->results[0]->geometry->location->lat;
 	$longitude = $output->results[0]->geometry->location->lng;
 	return ($latitude.", ".$longitude);
+}
+/**
+ *    Given an origin point of (0,0) and a destination point $x,$y
+ *  somewhere on an axis grid, compass() determines the compass
+ *  heading(direction) of the destination point from the origin
+ *
+ *  HOWEVER, atan2(y,x)'s natural compass thinks east is north,
+ *
+ *  {135}-------{ 90}-------{45}
+ *      | +-----[ +y]-----+ |
+ *      | |               | |
+ *      | |               | |
+ *  {180} [-x]  [0,0]  [+x] {0} <--------- North ?
+ *      | |               | |
+ *      | |               | |
+ *      | +-----[ -y]-----+ |
+ * {-135}-------{-90}-------{-45}
+ *
+ *
+ *    SO, we simply transpose the (y,x) parameters to atan2(x,y)
+ *     which will both rotate(left) and reflect(mirror) the compass.
+ *
+ *  Which gives us this compass
+ *
+ *  {-45}-------{ 0 }-------{45}
+ *      | +-----[ +y]-----+ |
+ *      | |               | |
+ *      | |               | |
+ *  {-90} [-x]  [0,0]  [+x] {90}
+ *      | |               | |
+ *      | |               | |
+ *      | +-----[ -y]-----+ |
+ * {-135}-------{180}-------{135}
+ *
+ *  FINALLY,` we check if param $x was indeed a negative number,
+ *  if so we simply add 360 to the negative angle returned by atan2()
+ *
+ */
+function compass($x,$y) {
+	if($x==0 AND $y==0) return 0;
+	return ($x < 0) ? rad2deg(atan2($x,$y))+360	: rad2deg(atan2($x,$y));
+}
+function polar($x,$y) {
+	$N = ($y>0)?'N':'';
+	$S = ($y<0)?'S':'';
+	$E = ($x>0)?'E':'';
+	$W = ($x<0)?'W':'';
+	return $N.$S.$E.$W;
+}
+function show_compass($x,$y) {
+	return polar($x,$y).' compass( x='.$x.', y='.$y.' )= '.number_format(compass($x,$y),3).'&deg';
+}
+function get_degree($x, $y) {
+	if($x == 0) $x = 1 / 10000;
+	$deg = rad2deg(atan(abs($y / $x)));
+	if($y >= 0) $deg = $x < 0 ? 180 - $deg : $deg;
+	else        $deg = $x < 0 ? 180 + $deg : 360 - $deg;
+	return $deg;
 }
 
 # DATE FUNCTIONS
@@ -741,6 +809,35 @@ function hitcounter(){
 	fwrite($data, $count);
 	fclose($data);
 	return $count;
+}
+function convBase($numberInput, $fromBaseInput, $toBaseInput) {
+	if ($fromBaseInput==$toBaseInput) return $numberInput;
+	$fromBase = str_split($fromBaseInput,1);
+	$toBase = str_split($toBaseInput,1);
+	$number = str_split($numberInput,1);
+	$fromLen=strlen($fromBaseInput);
+	$toLen=strlen($toBaseInput);
+	$numberLen=strlen($numberInput);
+	$retval='';
+	if ($toBaseInput == '0123456789')
+	{
+		$retval=0;
+		for ($i = 1;$i <= $numberLen; $i++)
+			$retval = bcadd($retval, bcmul(array_search($number[$i-1], $fromBase),bcpow($fromLen,$numberLen-$i)));
+		return $retval;
+	}
+	if ($fromBaseInput != '0123456789')
+		$base10=convBase($numberInput, $fromBaseInput, '0123456789');
+	else
+		$base10 = $numberInput;
+	if ($base10<strlen($toBaseInput))
+		return $toBase[$base10];
+	while($base10 != '0')
+	{
+		$retval = $toBase[bcmod($base10,$toLen)].$retval;
+		$base10 = bcdiv($base10,$toLen,0);
+	}
+	return $retval;
 }
 
 # IMAGE FUNCTIONS
