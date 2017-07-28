@@ -49,30 +49,9 @@ function decimal_to_fraction($fraction) {
 function gcd($a,$b) {
 	return ($a % $b) ? gcd($b,$a % $b) : $b;
 }
-function old_decimal_to_fraction($float) {
-	$denArray = $denom = '';
-	$float = clean_number($float);
-	$whole = floor($float);
-	$decimal = $float - $whole;
-	$leastCommonDenom = 384; // 128 * 3;
-	for ($den = 1; $den < 385; $den++){
-		$denArray .= $den.", ";
-	}
-	$denominators = array ($denArray);
-	$roundedDecimal = round ($decimal * $leastCommonDenom) / $leastCommonDenom;
-	if ($roundedDecimal == 0) return $whole;
-	if ($roundedDecimal == 1) return $whole + 1;
-	foreach ( $denominators as $d ) {
-		if ($roundedDecimal * $d == floor ($roundedDecimal * $d)) {
-			$denom = $d;
-			break;
-		}
-	}
-	return ($whole == 0 ? '' : $whole) . " " . ($roundedDecimal * $denom) . "/" . $denom;
-}
 function fraction_to_decimal ($fraction) {
 	$wholenum = explode(" ", $fraction);
-	var_dump($wholenum);
+	#var_dump($wholenum);
 	if (count($wholenum) == 1) {
 		$wholenumber = '';
 		$numbers = explode("/", $fraction);
