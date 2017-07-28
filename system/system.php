@@ -104,9 +104,9 @@ function trim_num($num, $digits = 0){
 	return ((floor($num * $shift)) / $shift);
 }
 function roman_numerals($num){
-	$c='IVXLCDM';
-	for($a=5, $b = $s = ''; $num; $b++, $a^=7)
-	for($o = $num % $a, $num = $num / $a^0; $o--; $s = $c[$o>2 ? $b + $num - ($num &= -2) + $o = 1: $b].$s)
+	$c = 'IVXLCDM';
+	for($a = 5, $b = $s = ''; $num; $b++, $a^=7)
+	for($o = $num % $a, $num = $num / $a^0; $o--; $s = $c[$o>2 ? $b + $num - ($num &= -2) + $o = 1: $b].$s);
 	return $s;
 }
 
