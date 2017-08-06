@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="Update ver 0.2.1 Beta (Build 65)&#10;FLAGS to clean_number function - Completed">
+    <list default="true" id="ce280ad2-3c53-4656-bdde-621575f3eb99" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/plg_bots/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/plg_bots/plg_botdetect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HISTORY.md" afterPath="$PROJECT_DIR$/HISTORY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/config.php" afterPath="$PROJECT_DIR$/bin/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/system.php" afterPath="$PROJECT_DIR$/system/system.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +27,6 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Framework" />
   </component>
@@ -36,8 +35,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <marker date="1500462509528" expanded="true" signature="633:666" ph="..." />
                 <marker date="1500462509528" expanded="true" signature="779:812" ph="..." />
@@ -78,8 +77,8 @@
       <file leaf-file-name="fw.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/fw.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="161">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="n#loadPlugin#0;n#!!top" expanded="false" />
                 <element signature="n#SysError#0;n#!!top" expanded="false" />
@@ -101,19 +100,29 @@
       <file leaf-file-name="system.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/system/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding>
+                <element signature="n#clean_number#0;n#!!top" expanded="false" />
                 <element signature="n#decimal_to_fraction#0;n#!!top" expanded="false" />
+                <element signature="n#gcd#0;n#!!top" expanded="false" />
                 <element signature="n#fraction_to_decimal#0;n#!!top" expanded="false" />
                 <element signature="n#is_whole_number#0;n#!!top" expanded="false" />
                 <element signature="n#return_whole_number#0;n#!!top" expanded="false" />
                 <element signature="n#return_decimal_number#0;n#!!top" expanded="false" />
                 <element signature="n#ordinalize#0;n#!!top" expanded="false" />
                 <element signature="n#parity#0;n#!!top" expanded="false" />
+                <element signature="n#trim_num#0;n#!!top" expanded="false" />
+                <element signature="n#roman_numerals#0;n#!!top" expanded="false" />
                 <element signature="n#getDistanceBetweenPoints#0;n#!!top" expanded="false" />
                 <element signature="n#getAddressFromPoints#0;n#!!top" expanded="false" />
                 <element signature="n#AddressToPoints#0;n#!!top" expanded="false" />
+                <element signature="n#compass#0;n#!!top" expanded="false" />
+                <element signature="n#polar#0;n#!!top" expanded="false" />
+                <element signature="n#show_compass#0;n#!!top" expanded="false" />
+                <element signature="n#get_degree#0;n#!!top" expanded="false" />
+                <element signature="n#isvaliddate#0;n#!!top" expanded="false" />
+                <element signature="n#days_month#0;n#!!top" expanded="false" />
                 <element signature="n#generate_calendar#0;n#!!top" expanded="false" />
                 <element signature="n#minutestohours#0;n#!!top" expanded="false" />
                 <element signature="n#_ago#0;n#!!top" expanded="false" />
@@ -139,6 +148,7 @@
                 <element signature="n#safe_redirect#0;n#!!top" expanded="false" />
                 <element signature="n#autoglobals#0;n#!!top" expanded="false" />
                 <element signature="n#hitcounter#0;n#!!top" expanded="false" />
+                <element signature="n#convBase#0;n#!!top" expanded="false" />
                 <element signature="n#resize_image#0;n#!!top" expanded="false" />
                 <element signature="n#show_gravatar#0;n#!!top" expanded="false" />
                 <element signature="n#Hex2RGB#0;n#!!top" expanded="false" />
@@ -147,9 +157,19 @@
                 <element signature="n#is_numeric_array#0;n#!!top" expanded="false" />
                 <element signature="n#array_changecase#0;n#!!top" expanded="false" />
                 <element signature="n#SQLclean#0;n#!!top" expanded="false" />
-                <marker date="1501157445012" expanded="true" signature="7193:7199" ph=" " />
-                <marker date="1501157445012" expanded="true" signature="7216:7222" ph=" " />
+                <marker date="1501276894610" expanded="true" signature="9048:9054" ph=" " />
+                <marker date="1501276894610" expanded="true" signature="9071:9077" ph=" " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_3.php" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,8 +177,8 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="207">
+              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -169,7 +189,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -234,9 +254,11 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php" />
-        <option value="$PROJECT_DIR$/system/system.php" />
         <option value="$PROJECT_DIR$/bin/config.php" />
         <option value="$PROJECT_DIR$/HISTORY.md" />
+        <option value="$PROJECT_DIR$/etc/plg_bots/plg_botdetect.php" />
+        <option value="$PROJECT_DIR$/system/system.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.php" />
       </list>
     </option>
   </component>
@@ -254,10 +276,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-11" />
-    <option name="width" value="1922" />
-    <option name="height" value="1092" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -302,154 +323,39 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="install" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="etc" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="etc" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plg_visitor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="etc" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plg_dump" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="etc" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plg_database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plg_bots" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -479,11 +385,13 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.scratch_1.php">
-    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Framework/index.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="scratch_1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php">
-      <method />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
@@ -523,15 +431,6 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -552,6 +451,8 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Framework/index.php" />
+    <configuration name="scratch_1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php" />
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
       <item index="1" class="java.lang.String" itemvalue="PHP Script.scratch_1.php" />
@@ -579,91 +480,12 @@
       <workItem from="1500034868816" duration="4251000" />
       <workItem from="1500039643184" duration="108713000" />
       <workItem from="1500648944786" duration="3473000" />
-      <workItem from="1500953279449" duration="18325000" />
-    </task>
-    <task id="LOCAL-00018" summary="Update ver 0.1.1 Beta (Build 14)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500322075104</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1500322075105</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Update ver 0.1.1 Beta (Build 15)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500322153565</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1500322153565</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Update ver 0.1.1 Beta (Build 16)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500322246056</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1500322246056</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Update ver 0.1.1 Beta (Build 17)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500325113636</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1500325113636</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Update ver 0.1.1 Beta (Build 18)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500325201123</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1500325201123</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Update ver 0.1.1 Beta (Build 19)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500325265168</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1500325265168</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update ver 0.1.1 Beta (Build 19)&#10;Added GetAddressFromPoints Function&#10;plg_system examples&#10;Bug Fixes">
-      <created>1500330308210</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1500330308210</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Update ver 0.1.1 Beta (Build 19)&#10;Added Hit Counter Function to the System Plugins">
-      <created>1500337186189</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1500337186189</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security">
-      <created>1500337623722</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1500337623722</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes">
-      <created>1500337722739</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1500337722739</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes">
-      <created>1500339151950</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1500339151950</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Update ver 0.1.1 Beta (Build 26)&#10;Bug Fixes">
-      <created>1500339211985</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1500339211985</updated>
+      <workItem from="1500953279449" duration="34497000" />
+      <workItem from="1501361371156" duration="1498000" />
+      <workItem from="1501378379249" duration="2885000" />
+      <workItem from="1501654511790" duration="862000" />
+      <workItem from="1501979162143" duration="9000" />
+      <workItem from="1502020010945" duration="48000" />
     </task>
     <task id="LOCAL-00030" summary="Update ver 0.1.1 Beta (Build 26)&#10;Bug Fixes">
       <created>1500339273981</created>
@@ -924,11 +746,95 @@
       <option name="project" value="LOCAL" />
       <updated>1501157382869</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Update ver 0.2.1 Beta (Build 65)&#10;FLAGS to clean_number function - Completed">
+      <created>1501157606185</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1501157606185</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Update ver 0.2.1 Beta (Build 65)&#10;Decimal to Fraction - Bug Fix&#10; -- Added missing $denom">
+      <created>1501248560264</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1501248560264</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Update ver 0.2.1 Beta (Build 65)&#10;Decimal to Fraction - Bug Fix&#10; -- Added missing $denom">
+      <created>1501250608692</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1501250608692</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Update ver 0.2.1 Beta (Build 65)&#10;Decimal to Fraction - Bug Fix&#10; -- Added missing $denom">
+      <created>1501250902597</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1501250902597</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Update ver 0.2.1 Beta (Build 65)&#10;Decimal to Fraction - Bug Fix&#10; -- Added missing $denom">
+      <created>1501251178413</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1501251178413</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Update ver 0.2.1 Beta (Build 65)&#10;Decimal to Fraction - Bug Fix&#10; -- Added missing $denom">
+      <created>1501251226599</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1501251226600</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Update ver 0.2.1 Beta (Build 65)&#10;Fraction to Decimal - Bug Fix">
+      <created>1501251900451</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1501251900451</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase">
+      <created>1501268162577</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1501268162578</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase">
+      <created>1501268555533</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1501268555533</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase">
+      <created>1501271301609</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1501271301609</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase">
+      <created>1501271358975</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1501271358975</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase">
+      <created>1501271440022</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1501271440022</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134762000" />
+    <option name="totallyTimeSpent" value="156236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,7 +846,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1056" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -965,7 +871,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
@@ -977,10 +883,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="2000" />
-    <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security" />
-    <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Added index.html file to each folder for extra security&#10;Bug Fixes" />
-    <MESSAGE value="Update ver 0.1.1 Beta (Build 26)&#10;Bug Fixes" />
-    <MESSAGE value="Update ver 0.1.1 Beta (Build 32)&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 36)&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 37)&#10;Bug Fixes" />
     <MESSAGE value="Update ver 0.1.1 Beta (Build 38)&#10;Bug Fixes" />
@@ -1002,7 +904,11 @@
     <MESSAGE value="Update ver 0.2.1 Beta (Build 58)&#10;BugFix FLAGS to clean_number function (Debugging...)" />
     <MESSAGE value="Update ver 0.2.1 Beta (Build 62)&#10;BugFix FLAGS to clean_number function (Debugging...)" />
     <MESSAGE value="Update ver 0.2.1 Beta (Build 64)&#10;BugFix FLAGS to clean_number function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.2.1 Beta (Build 64)&#10;BugFix FLAGS to clean_number function" />
+    <MESSAGE value="Update ver 0.2.1 Beta (Build 65)&#10;FLAGS to clean_number function - Completed" />
+    <MESSAGE value="Update ver 0.2.1 Beta (Build 65)&#10;Decimal to Fraction - Bug Fix&#10; -- Added missing $denom" />
+    <MESSAGE value="Update ver 0.2.1 Beta (Build 65)&#10;Fraction to Decimal - Bug Fix" />
+    <MESSAGE value="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ver 0.2.1 Beta (Build 70)&#10;Added Number Functions:&#10;   gcd&#10;   trim_num&#10;   roman_numerals&#10;  &#10;Added Address Functions:&#10;   compass&#10;   polar&#10;   show_compass&#10;   get_degree&#10;   &#10;Added String Functions:&#10;   convBase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1011,91 +917,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Dropbox/Programming/PHP_i-Stats_1.0/PHP_i-Stats_1.0/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install/install.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/CodeIgniter 3/CodeIgniter-3.0.2/system/libraries/Calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/CodeIgniter 3/CodeIgniter-3.0.2/system/libraries/Encrypt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/SecureLive/SecureLive/SecureLive NEW Files and Utilities/SecureLive PHP Helper/slphp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/SecureLive/SecureLive/SecureLive NEW Files and Utilities/SecureLive Preinstall Script/securelive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/SecureLive/SecureLive/SecureLive NEW Files and Utilities/SecureLive Security Suite/8.6.2/sl_admin/sl_admin/sl8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="1835" column="9" lean-forward="true" selection-start-line="1835" selection-start-column="9" selection-end-line="1835" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/inc_functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/3rdParty/quickFunctions/quickfunctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="931" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="971" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/3rdParty/mysql/mysql_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1799" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/dbcalls.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Programming/CodeIgniter 3/CodeIgniter-3.0.2/system/libraries/Calendar.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/CodeIgniter 3/CodeIgniter-3.0.2/system/libraries/Encrypt.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/SecureLive/SecureLive/SecureLive NEW Files and Utilities/SecureLive PHP Helper/slphp.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/SecureLive/SecureLive/SecureLive NEW Files and Utilities/SecureLive Preinstall Script/securelive.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/SecureLive/SecureLive/SecureLive NEW Files and Utilities/SecureLive Security Suite/8.6.2/sl_admin/sl_admin/sl8.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/inc_functions.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/3rdParty/quickFunctions/quickfunctions.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/3rdParty/mysql/mysql_class.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/timesheet/system/dbcalls.php" />
     <entry file="file://$PROJECT_DIR$/system/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1147,46 +977,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/worldsbestdetox.rocks_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/worldsbestdetox.rocks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/worldsbestdetox/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6769">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Programming/visitor_tracking/visitor_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/index.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/worldsbestdetox.rocks_config.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/worldsbestdetox.rocks.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/Redirect Script/worldsbestdetox/index.php" />
+    <entry file="file://$USER_HOME$/Dropbox/Programming/visitor_tracking/visitor_info.php" />
     <entry file="file://$PROJECT_DIR$/etc/plg_database/plg_database_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,13 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
-          <folding>
-            <element signature="e#79#384#0#PHP" expanded="false" />
-            <marker date="1500386993751" expanded="true" signature="6205:6237" ph="DELETE FROM " />
-            <marker date="1500386993751" expanded="true" signature="6987:7066" ph="INSERT INTO `${$tableName}`... " />
-            <marker date="1500386993751" expanded="true" signature="15801:15837" ph="SELECT * FRO... ${$table}" />
-            <marker date="1500386993751" expanded="true" signature="20046:20082" ph="SELECT * FRO... ${$table}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,65 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding>
-            <element signature="n#dump#0;n#!!top" expanded="false" />
-            <element signature="n#do_dump#0;n#!!top" expanded="false" />
-            <marker date="1500386847626" expanded="true" signature="7178:9828" ph="data:" />
-            <marker date="1500386847626" expanded="true" signature="10179:10186" ph="×" />
-            <marker date="1500386847626" expanded="true" signature="10727:10742" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="11969:12000" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="12030:12044" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="12271:12282" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="12356:12365" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="12438:12451" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="12546:12559" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="12630:12641" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="13050:13080" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="13117:13162" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="13557:13585" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="13745:13751" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="13751:13757" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="13757:13763" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="13763:13769" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="13769:13775" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="13798:13829" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="14211:14217" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14217:14223" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14223:14229" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14229:14235" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14235:14241" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14266:14297" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="14469:14475" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14475:14481" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14481:14487" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14487:14493" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14493:14499" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14524:14555" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="14730:14736" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14736:14742" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14742:14748" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14748:14754" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14754:14760" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14785:14816" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="14986:14992" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14992:14998" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="14998:15004" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15004:15010" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15010:15016" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15041:15072" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="15270:15276" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15276:15282" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15282:15288" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15288:15294" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15294:15300" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15325:15356" ph="..." />
-            <marker date="1500386847626" expanded="true" signature="15509:15515" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15515:15521" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15521:15527" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15527:15533" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15533:15539" ph=" " />
-            <marker date="1500386847626" expanded="true" signature="15564:15595" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1349,15 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/plg_dump/plg_dump_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1373,14 +1094,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1276">
+          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HISTORY.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/fw.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="n#loadPlugin#0;n#!!top" expanded="false" />
+            <element signature="n#SysError#0;n#!!top" expanded="false" />
+            <marker date="1500464392996" expanded="true" signature="2358:2370" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="2435:2447" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="2521:2533" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="2672:2685" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="2717:2728" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="2916:2928" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="2993:3005" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="3080:3092" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="3245:3258" ph="..." />
+            <marker date="1500464392996" expanded="true" signature="3290:3301" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <marker date="1500462509528" expanded="true" signature="633:666" ph="..." />
             <marker date="1500462509528" expanded="true" signature="779:812" ph="..." />
@@ -1417,72 +1176,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1276">
-          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#147#0#PHP" expanded="false" />
-            <marker date="1501092342470" expanded="true" signature="2936:2965" ph="SELECT * FRO... TABLE 1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/fw.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="n#loadPlugin#0;n#!!top" expanded="false" />
-            <element signature="n#SysError#0;n#!!top" expanded="false" />
-            <marker date="1500464392996" expanded="true" signature="2358:2370" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="2435:2447" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="2521:2533" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="2672:2685" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="2717:2728" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="2916:2928" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="2993:3005" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="3080:3092" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="3245:3258" ph="..." />
-            <marker date="1500464392996" expanded="true" signature="3290:3301" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HISTORY.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="207">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/plg_bots/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/plg_bots/plg_botdetect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449">
+          <caret line="6" column="70" lean-forward="true" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/plg_dump/plg_dump_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
           <folding>
+            <element signature="n#clean_number#0;n#!!top" expanded="false" />
             <element signature="n#decimal_to_fraction#0;n#!!top" expanded="false" />
+            <element signature="n#gcd#0;n#!!top" expanded="false" />
             <element signature="n#fraction_to_decimal#0;n#!!top" expanded="false" />
             <element signature="n#is_whole_number#0;n#!!top" expanded="false" />
             <element signature="n#return_whole_number#0;n#!!top" expanded="false" />
             <element signature="n#return_decimal_number#0;n#!!top" expanded="false" />
             <element signature="n#ordinalize#0;n#!!top" expanded="false" />
             <element signature="n#parity#0;n#!!top" expanded="false" />
+            <element signature="n#trim_num#0;n#!!top" expanded="false" />
+            <element signature="n#roman_numerals#0;n#!!top" expanded="false" />
             <element signature="n#getDistanceBetweenPoints#0;n#!!top" expanded="false" />
             <element signature="n#getAddressFromPoints#0;n#!!top" expanded="false" />
             <element signature="n#AddressToPoints#0;n#!!top" expanded="false" />
+            <element signature="n#compass#0;n#!!top" expanded="false" />
+            <element signature="n#polar#0;n#!!top" expanded="false" />
+            <element signature="n#show_compass#0;n#!!top" expanded="false" />
+            <element signature="n#get_degree#0;n#!!top" expanded="false" />
+            <element signature="n#isvaliddate#0;n#!!top" expanded="false" />
+            <element signature="n#days_month#0;n#!!top" expanded="false" />
             <element signature="n#generate_calendar#0;n#!!top" expanded="false" />
             <element signature="n#minutestohours#0;n#!!top" expanded="false" />
             <element signature="n#_ago#0;n#!!top" expanded="false" />
@@ -1508,6 +1265,7 @@
             <element signature="n#safe_redirect#0;n#!!top" expanded="false" />
             <element signature="n#autoglobals#0;n#!!top" expanded="false" />
             <element signature="n#hitcounter#0;n#!!top" expanded="false" />
+            <element signature="n#convBase#0;n#!!top" expanded="false" />
             <element signature="n#resize_image#0;n#!!top" expanded="false" />
             <element signature="n#show_gravatar#0;n#!!top" expanded="false" />
             <element signature="n#Hex2RGB#0;n#!!top" expanded="false" />
@@ -1516,8 +1274,8 @@
             <element signature="n#is_numeric_array#0;n#!!top" expanded="false" />
             <element signature="n#array_changecase#0;n#!!top" expanded="false" />
             <element signature="n#SQLclean#0;n#!!top" expanded="false" />
-            <marker date="1501157445012" expanded="true" signature="7193:7199" ph=" " />
-            <marker date="1501157445012" expanded="true" signature="7216:7222" ph=" " />
+            <marker date="1501276894610" expanded="true" signature="9048:9054" ph=" " />
+            <marker date="1501276894610" expanded="true" signature="9071:9077" ph=" " />
           </folding>
         </state>
       </provider>
